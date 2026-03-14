@@ -331,6 +331,31 @@
         max-width: 560px;
       }
 
+      .contact-details {
+        margin-top: 28px;
+        display: grid;
+        gap: 14px;
+        justify-items: center;
+      }
+
+      .contact-detail {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 18px;
+        border-radius: 16px;
+        border: 1px solid rgba(148, 163, 184, 0.16);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+        font-weight: 700;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+
+      .contact-detail:hover {
+        transform: translateY(-2px);
+        border-color: rgba(56, 189, 248, 0.45);
+      }
+
       .footer {
         padding: 24px 0 40px;
         color: var(--muted);
@@ -627,12 +652,35 @@
             <h2 class="section-title">Let’s work together</h2>
             <p>
               Open to freelance projects, frontend tasks and collaboration.
-              Feel free to contact me through GitHub or Freelancehunt.
+              Feel free to contact me through Telegram, LinkedIn, email,
+              GitHub or Freelancehunt.
             </p>
 
             <div class="hero__actions" style="justify-content: center;">
               <a
                 class="btn btn--primary"
+                href="https://t.me/Dmytro_LD"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Telegram
+              </a>
+              <a
+                class="btn btn--secondary"
+                href="https://www.linkedin.com/in/dmytro-popov-14a35b325"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                class="btn btn--secondary"
+                href="mailto:Lort20178@gmail.com"
+              >
+                Email
+              </a>
+              <a
+                class="btn btn--secondary"
                 href="https://freelancehunt.com/freelancer/Mylifeuncut2015.html"
                 target="_blank"
                 rel="noreferrer"
@@ -646,6 +694,15 @@
                 rel="noreferrer"
               >
                 GitHub
+              </a>
+            </div>
+
+            <div class="contact-details">
+              <a class="contact-detail" href="mailto:Lort20178@gmail.com">
+                Lort20178@gmail.com
+              </a>
+              <a class="contact-detail" href="tel:+380662617196">
+                +380 66 261 71 96
               </a>
             </div>
           </div>
