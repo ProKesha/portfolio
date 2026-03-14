@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dmytro Popov | Front-End Developer</title>
+    <title>Дмитро Попов | Front-End розробник</title>
     <style>
       :root {
         --bg: #0f172a;
@@ -96,6 +96,12 @@
         gap: 24px;
       }
 
+      .header__controls {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
       .nav a {
         color: var(--muted);
         transition: color 0.2s ease;
@@ -103,6 +109,34 @@
 
       .nav a:hover {
         color: var(--white);
+      }
+
+      .lang-switcher {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px;
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .lang-switcher button {
+        border: 0;
+        background: transparent;
+        color: var(--muted);
+        padding: 8px 14px;
+        border-radius: 999px;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+        transition:
+          color 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .lang-switcher button.is-active {
+        color: #06202c;
+        background: var(--accent);
       }
 
       .hero {
@@ -155,7 +189,10 @@
         padding: 0 22px;
         border-radius: 14px;
         font-weight: 700;
-        transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          border-color 0.2s ease;
       }
 
       .btn:hover {
@@ -178,7 +215,11 @@
       }
 
       .hero-card {
-        background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+        background: linear-gradient(
+          180deg,
+          rgba(30, 41, 59, 0.95),
+          rgba(15, 23, 42, 0.95)
+        );
         border: 1px solid rgba(148, 163, 184, 0.18);
         border-radius: var(--radius);
         padding: 28px;
@@ -318,7 +359,11 @@
       .contact-box {
         max-width: 760px;
         margin: 0 auto;
-        background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+        background: linear-gradient(
+          180deg,
+          rgba(30, 41, 59, 0.95),
+          rgba(15, 23, 42, 0.95)
+        );
         border: 1px solid rgba(148, 163, 184, 0.16);
         border-radius: var(--radius);
         padding: 40px 24px;
@@ -331,29 +376,58 @@
         max-width: 560px;
       }
 
+      .contact-links {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 8px;
+      }
+
+      .contact-links .btn {
+        width: 100%;
+        min-height: 58px;
+      }
+
       .contact-details {
         margin-top: 28px;
-        display: grid;
-        gap: 14px;
-        justify-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
       }
 
       .contact-detail {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 14px 18px;
-        border-radius: 16px;
-        border: 1px solid rgba(148, 163, 184, 0.16);
-        background: rgba(255, 255, 255, 0.03);
+        gap: 10px;
+        min-width: 260px;
+        padding: 16px 24px;
+        border-radius: 18px;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.03)
+        );
         color: var(--text);
         font-weight: 700;
-        transition: transform 0.2s ease, border-color 0.2s ease;
+        letter-spacing: 0.01em;
+        box-shadow: 0 14px 30px rgba(2, 6, 23, 0.18);
+        transition:
+          transform 0.2s ease,
+          border-color 0.2s ease,
+          background 0.2s ease;
       }
 
       .contact-detail:hover {
         transform: translateY(-2px);
         border-color: rgba(56, 189, 248, 0.45);
+        background: linear-gradient(
+          180deg,
+          rgba(56, 189, 248, 0.12),
+          rgba(255, 255, 255, 0.04)
+        );
       }
 
       .footer {
@@ -381,6 +455,10 @@
           padding: 16px 0;
         }
 
+        .header__controls {
+          flex-direction: column;
+        }
+
         .nav {
           flex-wrap: wrap;
           justify-content: center;
@@ -405,6 +483,21 @@
         .contact-box {
           padding: 20px;
         }
+
+        .contact-links {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .contact-detail {
+          width: 100%;
+          min-width: 0;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .contact-links {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -412,13 +505,19 @@
     <header class="header">
       <div class="container header__inner">
         <a class="logo" href="#home">Dmytro Popov</a>
+        <div class="header__controls">
+          <nav class="nav">
+            <a href="#projects" data-i18n="nav.projects">Проєкти</a>
+            <a href="#skills" data-i18n="nav.skills">Навички</a>
+            <a href="#about" data-i18n="nav.about">Про мене</a>
+            <a href="#contact" data-i18n="nav.contact">Контакти</a>
+          </nav>
 
-        <nav class="nav">
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
+          <div class="lang-switcher" aria-label="Language switcher">
+            <button class="is-active" type="button" data-lang="uk">UA</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -426,20 +525,17 @@
       <section class="hero" id="home">
         <div class="container hero__grid">
           <div>
-            <div class="eyebrow">Front-End Developer</div>
-            <h1>Building modern and responsive web interfaces</h1>
-            <p>
-              I create user-friendly web applications with React, TypeScript and
-              JavaScript. Focused on clean code, adaptive layout and convenient
-              user experience.
+            <div class="eyebrow" data-i18n="hero.eyebrow">Front-End розробник</div>
+            <h1 data-i18n="hero.title">Створюю сучасні та адаптивні вебінтерфейси</h1>
+            <p data-i18n="hero.description">
+              Розробляю зручні вебзастосунки на React, TypeScript і JavaScript.
+              Орієнтуюся на чистий код, адаптивну верстку та комфортний
+              користувацький досвід.
             </p>
 
             <div class="hero__actions">
-              <a
-                class="btn btn--primary"
-                href="#projects"
-              >
-                View Projects
+              <a class="btn btn--primary" href="#projects" data-i18n="hero.cta">
+                Переглянути проєкти
               </a>
               <a
                 class="btn btn--secondary"
@@ -461,11 +557,15 @@
           </div>
 
           <article class="hero-card">
-            <img src="./images/avatar.jpg" alt="Dmytro Popov" />
+            <img
+              src="./images/avatar.jpg"
+              alt="Dmytro Popov"
+              data-i18n-alt="hero.avatarAlt"
+            />
             <h2 class="hero-card__title">React • TypeScript • JavaScript</h2>
-            <p class="hero-card__text">
-              Junior Front-End Developer with a strong focus on practical
-              projects, responsive interfaces and interactive UI.
+            <p class="hero-card__text" data-i18n="hero.cardText">
+              Junior Front-End розробник із сильним фокусом на практичних
+              проєктах, адаптивних інтерфейсах та інтерактивному UI.
             </p>
           </article>
         </div>
@@ -473,9 +573,10 @@
 
       <section class="section" id="skills">
         <div class="container">
-          <h2 class="section-title">Tech Stack</h2>
-          <p class="section-subtitle">
-            Core technologies and tools I use to build modern web applications.
+          <h2 class="section-title" data-i18n="skills.title">Технології</h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">
+            Основні технології та інструменти, які я використовую для
+            створення сучасних вебзастосунків.
           </p>
 
           <div class="skills">
@@ -493,23 +594,29 @@
 
       <section class="section" id="projects">
         <div class="container">
-          <h2 class="section-title">Selected Projects</h2>
-          <p class="section-subtitle">
-            A few projects that demonstrate my experience with responsive
-            layouts, JavaScript logic and React applications.
+          <h2 class="section-title" data-i18n="projects.title">Вибрані проєкти</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">
+            Кілька проєктів, які демонструють мій досвід в адаптивній
+            верстці, JavaScript-логіці та React-застосунках.
           </p>
 
           <div class="projects">
             <article class="project">
               <div class="project__image">
-                <img src="./images/react-phone-catalog.jpg" alt="React Phone Catalog" />
+                <img
+                  src="./images/react-phone-catalog.jpg"
+                  alt="Каталог телефонів на React"
+                  data-i18n-alt="projects.catalog.alt"
+                />
               </div>
 
               <div class="project__content">
-                <h3 class="project__title">React Phone Catalog</h3>
-                <p class="project__text">
-                  SPA e-commerce interface with product catalog, sorting,
-                  filtering, pagination and product details page.
+                <h3 class="project__title" data-i18n="projects.catalog.title">
+                  Каталог телефонів на React
+                </h3>
+                <p class="project__text" data-i18n="projects.catalog.description">
+                  SPA-інтерфейс для e-commerce з каталогом товарів, сортуванням,
+                  фільтрацією, пагінацією та сторінкою деталей продукту.
                 </p>
 
                 <div class="project__stack">
@@ -525,8 +632,9 @@
                     href="https://prokesha.github.io/react_phone-catalog/"
                     target="_blank"
                     rel="noreferrer"
+                    data-i18n="common.liveDemo"
                   >
-                    Live Demo
+                    Живе демо
                   </a>
                   <a
                     class="btn btn--secondary"
@@ -542,14 +650,20 @@
 
             <article class="project">
               <div class="project__image">
-                <img src="./images/landing-page.jpg" alt="Landing Page" />
+                <img
+                  src="./images/landing-page.jpg"
+                  alt="Лендінг"
+                  data-i18n-alt="projects.landing.alt"
+                />
               </div>
 
               <div class="project__content">
-                <h3 class="project__title">Responsive Landing Page</h3>
-                <p class="project__text">
-                  Modern responsive landing page built from a design mockup with
-                  clean layout and adaptive behavior.
+                <h3 class="project__title" data-i18n="projects.landing.title">
+                  Адаптивний лендінг
+                </h3>
+                <p class="project__text" data-i18n="projects.landing.description">
+                  Сучасний адаптивний лендінг, зверстаний із дизайн-макета з
+                  чистою структурою та коректною поведінкою на різних екранах.
                 </p>
 
                 <div class="project__stack">
@@ -564,8 +678,9 @@
                     href="https://prokesha.github.io/layout_landing-page/"
                     target="_blank"
                     rel="noreferrer"
+                    data-i18n="common.liveDemo"
                   >
-                    Live Demo
+                    Живе демо
                   </a>
                   <a
                     class="btn btn--secondary"
@@ -581,14 +696,21 @@
 
             <article class="project">
               <div class="project__image">
-                <img src="./images/js-2048-game.jpg" alt="2048 JavaScript Game" />
+                <img
+                  src="./images/js-2048-game.jpg"
+                  alt="Гра 2048 на JavaScript"
+                  data-i18n-alt="projects.game.alt"
+                />
               </div>
 
               <div class="project__content">
-                <h3 class="project__title">2048 JavaScript Game</h3>
-                <p class="project__text">
-                  Interactive browser game with JavaScript game logic, keyboard
-                  controls, score calculation and dynamic UI updates.
+                <h3 class="project__title" data-i18n="projects.game.title">
+                  Гра 2048 на JavaScript
+                </h3>
+                <p class="project__text" data-i18n="projects.game.description">
+                  Інтерактивна браузерна гра з ігровою логікою на JavaScript,
+                  керуванням з клавіатури, підрахунком очок і динамічними
+                  оновленнями інтерфейсу.
                 </p>
 
                 <div class="project__stack">
@@ -603,8 +725,9 @@
                     href="https://prokesha.github.io/js_2048_game/"
                     target="_blank"
                     rel="noreferrer"
+                    data-i18n="common.liveDemo"
                   >
-                    Live Demo
+                    Живе демо
                   </a>
                   <a
                     class="btn btn--secondary"
@@ -624,23 +747,23 @@
       <section class="section" id="about">
         <div class="container about">
           <article class="about-card">
-            <h3>About Me</h3>
-            <p>
-              I am a Front-End Developer focused on creating practical,
-              well-structured web projects. I enjoy building responsive
-              interfaces, working with components and improving user
-              experience.
+            <h3 data-i18n="about.title">Про мене</h3>
+            <p data-i18n="about.description">
+              Я Front-End Developer, який зосереджений на створенні практичних
+              і добре структурованих вебпроєктів. Мені подобається розробляти
+              адаптивні інтерфейси, працювати з компонентами та покращувати
+              користувацький досвід.
             </p>
           </article>
 
           <article class="about-card">
-            <h3>What I Can Help With</h3>
+            <h3 data-i18n="about.helpTitle">Чим я можу допомогти</h3>
             <ul>
-              <li>Responsive website layout</li>
-              <li>Landing page development</li>
-              <li>React UI implementation</li>
-              <li>Interactive JavaScript functionality</li>
-              <li>Frontend bug fixing and improvements</li>
+              <li data-i18n="about.help.1">Адаптивна верстка сайтів</li>
+              <li data-i18n="about.help.2">Розробка лендінгів</li>
+              <li data-i18n="about.help.3">Реалізація інтерфейсів на React</li>
+              <li data-i18n="about.help.4">Інтерактивний функціонал на JavaScript</li>
+              <li data-i18n="about.help.5">Виправлення багів і покращення фронтенду</li>
             </ul>
           </article>
         </div>
@@ -649,16 +772,18 @@
       <section class="contact" id="contact">
         <div class="container">
           <div class="contact-box">
-            <h2 class="section-title">Let’s work together</h2>
-            <p>
-              Open to freelance projects, frontend tasks and collaboration.
-              Feel free to contact me through Telegram, LinkedIn, email,
-              GitHub or Freelancehunt.
+            <h2 class="section-title" data-i18n="contact.title">
+              Давайте працювати разом
+            </h2>
+            <p data-i18n="contact.description">
+              Відкритий до фриланс-проєктів, фронтенд-завдань і співпраці.
+              Зв'язатися зі мною можна через Telegram, LinkedIn, GitHub або
+              Freelancehunt.
             </p>
 
-            <div class="hero__actions" style="justify-content: center;">
+            <div class="contact-links">
               <a
-                class="btn btn--primary"
+                class="btn btn--secondary"
                 href="https://t.me/Dmytro_LD"
                 target="_blank"
                 rel="noreferrer"
@@ -672,12 +797,6 @@
                 rel="noreferrer"
               >
                 LinkedIn
-              </a>
-              <a
-                class="btn btn--secondary"
-                href="mailto:Lort20178@gmail.com"
-              >
-                Email
               </a>
               <a
                 class="btn btn--secondary"
@@ -712,8 +831,153 @@
 
     <footer class="footer">
       <div class="container">
-        <p>© 2026 Dmytro Popov — Front-End Developer</p>
+        <p data-i18n="footer.copy">© 2026 Дмитро Попов — Front-End розробник</p>
       </div>
     </footer>
+
+    <script>
+      const translations = {
+        uk: {
+          title: "Дмитро Попов | Front-End розробник",
+          "nav.projects": "Проєкти",
+          "nav.skills": "Навички",
+          "nav.about": "Про мене",
+          "nav.contact": "Контакти",
+          "hero.eyebrow": "Front-End розробник",
+          "hero.title": "Створюю сучасні та адаптивні вебінтерфейси",
+          "hero.description":
+            "Розробляю зручні вебзастосунки на React, TypeScript і JavaScript. Орієнтуюся на чистий код, адаптивну верстку та комфортний користувацький досвід.",
+          "hero.cta": "Переглянути проєкти",
+          "hero.avatarAlt": "Dmytro Popov",
+          "hero.cardText":
+            "Junior Front-End розробник із сильним фокусом на практичних проєктах, адаптивних інтерфейсах та інтерактивному UI.",
+          "skills.title": "Технології",
+          "skills.subtitle":
+            "Основні технології та інструменти, які я використовую для створення сучасних вебзастосунків.",
+          "projects.title": "Вибрані проєкти",
+          "projects.subtitle":
+            "Кілька проєктів, які демонструють мій досвід в адаптивній верстці, JavaScript-логіці та React-застосунках.",
+          "projects.catalog.alt": "Каталог телефонів на React",
+          "projects.catalog.title": "Каталог телефонів на React",
+          "projects.catalog.description":
+            "SPA-інтерфейс для e-commerce з каталогом товарів, сортуванням, фільтрацією, пагінацією та сторінкою деталей продукту.",
+          "projects.landing.alt": "Лендінг",
+          "projects.landing.title": "Адаптивний лендінг",
+          "projects.landing.description":
+            "Сучасний адаптивний лендінг, зверстаний із дизайн-макета з чистою структурою та коректною поведінкою на різних екранах.",
+          "projects.game.alt": "Гра 2048 на JavaScript",
+          "projects.game.title": "Гра 2048 на JavaScript",
+          "projects.game.description":
+            "Інтерактивна браузерна гра з ігровою логікою на JavaScript, керуванням з клавіатури, підрахунком очок і динамічними оновленнями інтерфейсу.",
+          "common.liveDemo": "Демо",
+          "about.title": "Про мене",
+          "about.description":
+            "Я Front-End Developer, який зосереджений на створенні практичних і добре структурованих вебпроєктів. Мені подобається розробляти адаптивні інтерфейси, працювати з компонентами та покращувати користувацький досвід.",
+          "about.helpTitle": "Чим я можу допомогти",
+          "about.help.1": "Адаптивна верстка сайтів",
+          "about.help.2": "Розробка лендінгів",
+          "about.help.3": "Реалізація інтерфейсів на React",
+          "about.help.4": "Інтерактивний функціонал на JavaScript",
+          "about.help.5": "Виправлення багів і покращення фронтенду",
+          "contact.title": "Давайте працювати разом",
+          "contact.description":
+            "Відкритий до фриланс-проєктів, фронтенд-завдань і співпраці. Зв'язатися зі мною можна через Telegram, LinkedIn, GitHub або Freelancehunt.",
+          "footer.copy": "© 2026 Дмитро Попов — Front-End розробник",
+        },
+        en: {
+          title: "Dmytro Popov | Front-End Developer",
+          "nav.projects": "Projects",
+          "nav.skills": "Skills",
+          "nav.about": "About",
+          "nav.contact": "Contact",
+          "hero.eyebrow": "Front-End Developer",
+          "hero.title": "Building modern and responsive web interfaces",
+          "hero.description":
+            "I create user-friendly web applications with React, TypeScript and JavaScript. Focused on clean code, adaptive layout and convenient user experience.",
+          "hero.cta": "View Projects",
+          "hero.avatarAlt": "Dmytro Popov",
+          "hero.cardText":
+            "Junior Front-End Developer with a strong focus on practical projects, responsive interfaces and interactive UI.",
+          "skills.title": "Tech Stack",
+          "skills.subtitle":
+            "Core technologies and tools I use to build modern web applications.",
+          "projects.title": "Selected Projects",
+          "projects.subtitle":
+            "A few projects that demonstrate my experience with responsive layouts, JavaScript logic and React applications.",
+          "projects.catalog.alt": "React Phone Catalog",
+          "projects.catalog.title": "React Phone Catalog",
+          "projects.catalog.description":
+            "SPA e-commerce interface with product catalog, sorting, filtering, pagination and product details page.",
+          "projects.landing.alt": "Landing Page",
+          "projects.landing.title": "Responsive Landing Page",
+          "projects.landing.description":
+            "Modern responsive landing page built from a design mockup with clean layout and adaptive behavior.",
+          "projects.game.alt": "2048 JavaScript Game",
+          "projects.game.title": "2048 JavaScript Game",
+          "projects.game.description":
+            "Interactive browser game with JavaScript game logic, keyboard controls, score calculation and dynamic UI updates.",
+          "common.liveDemo": "Live Demo",
+          "about.title": "About Me",
+          "about.description":
+            "I am a Front-End Developer focused on creating practical, well-structured web projects. I enjoy building responsive interfaces, working with components and improving user experience.",
+          "about.helpTitle": "What I Can Help With",
+          "about.help.1": "Responsive website layout",
+          "about.help.2": "Landing page development",
+          "about.help.3": "React UI implementation",
+          "about.help.4": "Interactive JavaScript functionality",
+          "about.help.5": "Frontend bug fixing and improvements",
+          "contact.title": "Let's work together",
+          "contact.description":
+            "Open to freelance projects, frontend tasks and collaboration. Feel free to contact me through Telegram, LinkedIn, GitHub or Freelancehunt.",
+          "footer.copy": "© 2026 Dmytro Popov — Front-End Developer",
+        },
+      };
+
+      const textNodes = document.querySelectorAll("[data-i18n]");
+      const altNodes = document.querySelectorAll("[data-i18n-alt]");
+      const langButtons = document.querySelectorAll("[data-lang]");
+      const storageKey = "portfolio-language";
+
+      function applyLanguage(language) {
+        const locale = translations[language] || translations.uk;
+
+        document.documentElement.lang = language;
+        document.title = locale.title;
+
+        textNodes.forEach((node) => {
+          const key = node.dataset.i18n;
+
+          if (locale[key]) {
+            node.textContent = locale[key];
+          }
+        });
+
+        altNodes.forEach((node) => {
+          const key = node.dataset.i18nAlt;
+
+          if (locale[key]) {
+            node.alt = locale[key];
+          }
+        });
+
+        langButtons.forEach((button) => {
+          button.classList.toggle("is-active", button.dataset.lang === language);
+        });
+
+        localStorage.setItem(storageKey, language);
+      }
+
+      const savedLanguage = localStorage.getItem(storageKey);
+      const browserLanguage = navigator.language?.startsWith("uk") ? "uk" : "en";
+      const initialLanguage = savedLanguage || browserLanguage;
+
+      applyLanguage(initialLanguage);
+
+      langButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          applyLanguage(button.dataset.lang);
+        });
+      });
+    </script>
   </body>
 </html>
