@@ -31,6 +31,10 @@ const translations = {
     "projects.game.title": "Гра 2048 на JavaScript",
     "projects.game.description":
       "Інтерактивна браузерна гра з ігровою логікою на JavaScript, керуванням з клавіатури, підрахунком очок і динамічними оновленнями інтерфейсу.",
+    "projects.nutrition.alt": "Сайт нутриціолога Дар’ї Попової",
+    "projects.nutrition.title": "Сайт нутриціолога Дар’ї Попової",
+    "projects.nutrition.description":
+      "Багатомовний сайт для нутриціолога з презентацією послуг, контактною формою та особистим кабінетом для роботи з пацієнтами, записами й аналізами.",
     "common.liveDemo": "Демо",
     "about.title": "Про мене",
     "about.description":
@@ -78,6 +82,10 @@ const translations = {
     "projects.game.title": "2048 JavaScript Game",
     "projects.game.description":
       "Interactive browser game with JavaScript game logic, keyboard controls, score calculation and dynamic UI updates.",
+    "projects.nutrition.alt": "Daria Popova nutrition website",
+    "projects.nutrition.title": "Daria Popova Nutrition Website",
+    "projects.nutrition.description":
+      "Multilingual nutritionist website with service presentation, contact form, and a personal dashboard for managing patients, appointments, and analyses.",
     "common.liveDemo": "Live Demo",
     "about.title": "About Me",
     "about.description":
