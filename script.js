@@ -31,10 +31,10 @@ const translations = {
     "projects.game.title": "Гра 2048 на JavaScript",
     "projects.game.description":
       "Інтерактивна браузерна гра з ігровою логікою на JavaScript, керуванням з клавіатури, підрахунком очок і динамічними оновленнями інтерфейсу.",
-    "projects.nutrition.alt": "Сайт нутриціолога Дар’ї Попової",
-    "projects.nutrition.title": "Сайт нутриціолога Дар’ї Попової",
+    "projects.nutrition.alt": "Сайт естетичного лікаря Дарії Попової",
+    "projects.nutrition.title": "Сайт естетичного лікаря (реальний клієнтський проєкт)",
     "projects.nutrition.description":
-      "Багатомовний сайт для нутриціолога з презентацією послуг, контактною формою та особистим кабінетом для роботи з пацієнтами, записами й аналізами.",
+      "Розробив сучасний адаптивний сайт для естетичного лікаря з акцентом на чистий UI, довіру користувачів і оптимізацію конверсії. Налаштував CI/CD через GitHub і Cloudflare Pages, включно з підключенням власного домену.",
     "common.liveDemo": "Демо",
     "about.title": "Про мене",
     "about.description":
@@ -82,10 +82,10 @@ const translations = {
     "projects.game.title": "2048 JavaScript Game",
     "projects.game.description":
       "Interactive browser game with JavaScript game logic, keyboard controls, score calculation and dynamic UI updates.",
-    "projects.nutrition.alt": "Daria Popova nutrition website",
-    "projects.nutrition.title": "Daria Popova Nutrition Website",
+    "projects.nutrition.alt": "Daria Popova aesthetic doctor website",
+    "projects.nutrition.title": "Aesthetic Doctor Website (Real Client Project)",
     "projects.nutrition.description":
-      "Multilingual nutritionist website with service presentation, contact form, and a personal dashboard for managing patients, appointments, and analyses.",
+      "Developed a modern responsive website for an aesthetic doctor. Focused on clean UI, user trust, and conversion optimization. Implemented a full deployment pipeline using GitHub and Cloudflare Pages, including custom domain setup and continuous delivery.",
     "common.liveDemo": "Live Demo",
     "about.title": "About Me",
     "about.description":
