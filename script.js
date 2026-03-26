@@ -31,10 +31,10 @@ const translations = {
     "projects.game.title": "Гра 2048 на JavaScript",
     "projects.game.description":
       "Інтерактивна браузерна гра з ігровою логікою на JavaScript, керуванням з клавіатури, підрахунком очок і динамічними оновленнями інтерфейсу.",
-    "projects.nutrition.alt": "Сайт естетичного лікаря Дарії Попової",
-    "projects.nutrition.title": "Сайт естетичного лікаря (реальний клієнтський проєкт)",
+    "projects.nutrition.alt": "Сайт лікаря-нутріціолога Дарії Попової",
+    "projects.nutrition.title": "Сайт лікаря-нутріціолога (реальний клієнтський проєкт)",
     "projects.nutrition.description":
-      "Розробив сучасний адаптивний сайт для естетичного лікаря з акцентом на чистий UI, довіру користувачів і оптимізацію конверсії. Налаштував CI/CD через GitHub і Cloudflare Pages, включно з підключенням власного домену.",
+      "Розробив сучасний адаптивний сайт для лікаря-нутріціолога з акцентом на чистий UI, довіру користувачів і оптимізацію конверсії. Налаштував CI/CD через GitHub і Cloudflare Pages, включно з підключенням власного домену.",
     "common.liveDemo": "Демо",
     "about.title": "Про мене",
     "about.description":
@@ -82,10 +82,10 @@ const translations = {
     "projects.game.title": "2048 JavaScript Game",
     "projects.game.description":
       "Interactive browser game with JavaScript game logic, keyboard controls, score calculation and dynamic UI updates.",
-    "projects.nutrition.alt": "Daria Popova aesthetic doctor website",
-    "projects.nutrition.title": "Aesthetic Doctor Website (Real Client Project)",
+    "projects.nutrition.alt": "Daria Popova doctor nutritionist website",
+    "projects.nutrition.title": "Doctor-Nutritionist Website (Real Client Project)",
     "projects.nutrition.description":
-      "Developed a modern responsive website for an aesthetic doctor. Focused on clean UI, user trust, and conversion optimization. Implemented a full deployment pipeline using GitHub and Cloudflare Pages, including custom domain setup and continuous delivery.",
+      "Developed a modern responsive website for a doctor nutritionist. Focused on clean UI, user trust, and conversion optimization. Implemented a full deployment pipeline using GitHub and Cloudflare Pages, including custom domain setup and continuous delivery.",
     "common.liveDemo": "Live Demo",
     "about.title": "About Me",
     "about.description":
