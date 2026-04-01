@@ -25,8 +25,9 @@ const translations = {
       "Задеплоєний Node.js бекенд з Prisma, PostgreSQL та повним CRUD для користувачів і витрат.",
     "projects.backend.title": "Accounting App API",
     "projects.backend.description":
-      "Розробив і задеплоїв REST API для обліку витрат з CRUD для користувачів і витрат, фільтрацією за датою та категоріями, Prisma-міграціями і PostgreSQL на Render.",
+      "Backend-only проєкт: розробив і задеплоїв REST API для обліку витрат з CRUD для користувачів і витрат, фільтрацією за датою та категоріями, Prisma-міграціями та PostgreSQL. Код, структура API і логіка доступні на GitHub, а live endpoint показує JSON-відповідь сервера.",
     "projects.backend.demo": "Відкрити API (/users)",
+    "projects.backend.repo": "GitHub",
     "projects.catalog.alt": "Каталог телефонів на React",
     "projects.catalog.title": "Каталог телефонів на React",
     "projects.catalog.description":
@@ -84,8 +85,9 @@ const translations = {
       "Deployed Node.js backend with Prisma, PostgreSQL and full CRUD for users and expenses.",
     "projects.backend.title": "Accounting App API",
     "projects.backend.description":
-      "Built and deployed a REST API for expense tracking with CRUD for users and expenses, date and category filters, Prisma migrations and PostgreSQL on Render.",
+      "Backend-only project: built and deployed a REST API for expense tracking with CRUD for users and expenses, date and category filters, Prisma migrations, and PostgreSQL. The codebase, API structure, and business logic are available on GitHub, while the live endpoint shows the server JSON response.",
     "projects.backend.demo": "Open API (/users)",
+    "projects.backend.repo": "GitHub",
     "projects.catalog.alt": "React Phone Catalog",
     "projects.catalog.title": "React Phone Catalog",
     "projects.catalog.description":
