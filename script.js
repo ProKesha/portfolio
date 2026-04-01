@@ -19,6 +19,14 @@ const translations = {
     "projects.title": "Вибрані проєкти",
     "projects.subtitle":
       "Кілька проєктів, які демонструють мій досвід в адаптивній верстці, JavaScript-логіці та React-застосунках.",
+    "projects.backend.label": "Backend API",
+    "projects.backend.visualTitle": "Accounting App API",
+    "projects.backend.visualText":
+      "Задеплоєний Node.js бекенд з Prisma, PostgreSQL та повним CRUD для користувачів і витрат.",
+    "projects.backend.title": "Accounting App API",
+    "projects.backend.description":
+      "Розробив і задеплоїв REST API для обліку витрат з CRUD для користувачів і витрат, фільтрацією за датою та категоріями, Prisma-міграціями і PostgreSQL на Render.",
+    "projects.backend.demo": "Відкрити API (/users)",
     "projects.catalog.alt": "Каталог телефонів на React",
     "projects.catalog.title": "Каталог телефонів на React",
     "projects.catalog.description":
@@ -32,7 +40,7 @@ const translations = {
     "projects.game.description":
       "Інтерактивна браузерна гра з ігровою логікою на JavaScript, керуванням з клавіатури, підрахунком очок і динамічними оновленнями інтерфейсу.",
     "projects.nutrition.alt": "Сайт лікаря-нутріціолога Дарії Попової",
-    "projects.nutrition.title": "Сайт лікаря-нутріціолога (реальний клієнтський проєкт)",
+    "projects.nutrition.title": "Сайт лікаря-нутріціолога",
     "projects.nutrition.description":
       "Розробив сучасний адаптивний сайт для лікаря-нутріціолога з акцентом на чистий UI, довіру користувачів і оптимізацію конверсії. Налаштував CI/CD через GitHub і Cloudflare Pages, включно з підключенням власного домену.",
     "common.liveDemo": "Демо",
@@ -45,7 +53,7 @@ const translations = {
     "about.help.3": "Реалізація інтерфейсів на React",
     "about.help.4": "Інтерактивний функціонал на JavaScript",
     "about.help.5": "Виправлення багів і покращення фронтенду",
-    "contact.title": "Давайте працювати разом",
+    "contact.title": "Контакти",
     "contact.description":
       "Відкритий до фриланс-проєктів, фронтенд-завдань і співпраці. Зв'язатися зі мною можна через Telegram, LinkedIn, GitHub або Freelancehunt.",
     "footer.copy": "© 2026 Дмитро Попов — Front-End розробник",
@@ -70,6 +78,14 @@ const translations = {
     "projects.title": "Selected Projects",
     "projects.subtitle":
       "A few projects that demonstrate my experience with responsive layouts, JavaScript logic and React applications.",
+    "projects.backend.label": "Backend API",
+    "projects.backend.visualTitle": "Accounting App API",
+    "projects.backend.visualText":
+      "Deployed Node.js backend with Prisma, PostgreSQL and full CRUD for users and expenses.",
+    "projects.backend.title": "Accounting App API",
+    "projects.backend.description":
+      "Built and deployed a REST API for expense tracking with CRUD for users and expenses, date and category filters, Prisma migrations and PostgreSQL on Render.",
+    "projects.backend.demo": "Open API (/users)",
     "projects.catalog.alt": "React Phone Catalog",
     "projects.catalog.title": "React Phone Catalog",
     "projects.catalog.description":
@@ -83,7 +99,7 @@ const translations = {
     "projects.game.description":
       "Interactive browser game with JavaScript game logic, keyboard controls, score calculation and dynamic UI updates.",
     "projects.nutrition.alt": "Daria Popova doctor nutritionist website",
-    "projects.nutrition.title": "Doctor-Nutritionist Website (Real Client Project)",
+    "projects.nutrition.title": "Doctor-Nutritionist Website",
     "projects.nutrition.description":
       "Developed a modern responsive website for a doctor nutritionist. Focused on clean UI, user trust, and conversion optimization. Implemented a full deployment pipeline using GitHub and Cloudflare Pages, including custom domain setup and continuous delivery.",
     "common.liveDemo": "Live Demo",
@@ -96,7 +112,7 @@ const translations = {
     "about.help.3": "React UI implementation",
     "about.help.4": "Interactive JavaScript functionality",
     "about.help.5": "Frontend bug fixing and improvements",
-    "contact.title": "Let's work together",
+    "contact.title": "Contact",
     "contact.description":
       "Open to freelance projects, frontend tasks and collaboration. Feel free to contact me through Telegram, LinkedIn, GitHub or Freelancehunt.",
     "footer.copy": "© 2026 Dmytro Popov — Front-End Developer",
