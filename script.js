@@ -19,14 +19,14 @@ const translations = {
     "projects.title": "Вибрані проєкти",
     "projects.subtitle":
       "Кілька проєктів, які демонструють мій досвід в адаптивній верстці, JavaScript-логіці та React-застосунках.",
-    "projects.backend.label": "Backend API",
-    "projects.backend.visualTitle": "Accounting App API",
+    "projects.backend.label": "Real-time App",
+    "projects.backend.visualTitle": "Node Chat",
     "projects.backend.visualText":
-      "Задеплоєний Node.js бекенд з Prisma, PostgreSQL та повним CRUD для користувачів і витрат.",
-    "projects.backend.title": "Accounting App API",
+      "Real-time чат із кількома кімнатами, створений на Node.js, Express і Socket.IO.",
+    "projects.backend.title": "Node Chat",
     "projects.backend.description":
-      "Backend-only проєкт: розробив і задеплоїв REST API для обліку витрат з CRUD для користувачів і витрат, фільтрацією за датою та категоріями, Prisma-міграціями та PostgreSQL. Код, структура API і логіка доступні на GitHub, а live endpoint показує JSON-відповідь сервера.",
-    "projects.backend.demo": "Відкрити API (/users)",
+      "Node Chat — це вебзастосунок для обміну повідомленнями в реальному часі. Користувач може задати ім'я, створювати кімнати, перемикатися між ними, перейменовувати або видаляти їх і миттєво надсилати повідомлення в межах вибраної кімнати.",
+    "projects.backend.demo": "Відкрити чат",
     "projects.backend.repo": "GitHub",
     "projects.catalog.alt": "Каталог телефонів на React",
     "projects.catalog.title": "Каталог телефонів на React",
@@ -79,14 +79,14 @@ const translations = {
     "projects.title": "Selected Projects",
     "projects.subtitle":
       "A few projects that demonstrate my experience with responsive layouts, JavaScript logic and React applications.",
-    "projects.backend.label": "Backend API",
-    "projects.backend.visualTitle": "Accounting App API",
+    "projects.backend.label": "Real-time App",
+    "projects.backend.visualTitle": "Node Chat",
     "projects.backend.visualText":
-      "Deployed Node.js backend with Prisma, PostgreSQL and full CRUD for users and expenses.",
-    "projects.backend.title": "Accounting App API",
+      "A real-time multi-room chat app built with Node.js, Express, and Socket.IO.",
+    "projects.backend.title": "Node Chat",
     "projects.backend.description":
-      "Backend-only project: built and deployed a REST API for expense tracking with CRUD for users and expenses, date and category filters, Prisma migrations, and PostgreSQL. The codebase, API structure, and business logic are available on GitHub, while the live endpoint shows the server JSON response.",
-    "projects.backend.demo": "Open API (/users)",
+      "Node Chat is a real-time chat web application where users can set a username, create rooms, switch between them, rename or delete rooms, and instantly exchange messages inside the selected room.",
+    "projects.backend.demo": "Open Chat",
     "projects.backend.repo": "GitHub",
     "projects.catalog.alt": "React Phone Catalog",
     "projects.catalog.title": "React Phone Catalog",

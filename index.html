@@ -117,40 +117,90 @@
 
           <div class="projects">
             <article class="project">
-              <div class="project__image project__image--backend">
-                <div class="project__visual">
-                  <span class="project__eyebrow" data-i18n="projects.backend.label">
-                    Backend API
-                  </span>
-                  <h3 data-i18n="projects.backend.visualTitle">
-                    Accounting App API
-                  </h3>
-                  <p data-i18n="projects.backend.visualText">
-                    Deployed Node.js backend with Prisma, PostgreSQL and full CRUD for users and expenses.
-                  </p>
+              <div class="project__image">
+                <div class="chat-preview" aria-hidden="true">
+                  <div class="chat-preview__sidebar">
+                    <div class="chat-preview__brand card">
+                      <div class="chat-preview__brand-title">Node Chat</div>
+                      <div class="chat-preview__brand-subtitle">
+                        Portfolio project with Node.js + Socket.IO
+                      </div>
+                    </div>
+
+                    <div class="chat-preview__panel card">
+                      <div class="chat-preview__label">Username</div>
+                      <div class="chat-preview__input-row">
+                        <div class="chat-preview__input">Dmytro</div>
+                        <div class="chat-preview__button">Save</div>
+                      </div>
+                      <div class="chat-preview__hint">Current user: Dmytro</div>
+                    </div>
+
+                    <div class="chat-preview__panel card">
+                      <div class="chat-preview__rooms-title">Rooms</div>
+                      <div class="chat-preview__input-row">
+                        <div class="chat-preview__input chat-preview__input--muted">
+                          New room
+                        </div>
+                        <div class="chat-preview__button">Create</div>
+                      </div>
+                      <div class="chat-preview__room">
+                        <span>General</span>
+                        <div class="chat-preview__room-actions">
+                          <span class="chat-preview__link">Rename</span>
+                          <span class="chat-preview__danger">Delete</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chat-preview__main">
+                    <div class="chat-preview__header card">
+                      <div class="chat-preview__header-label">Current room</div>
+                      <div class="chat-preview__header-title">General</div>
+                    </div>
+
+                    <div class="chat-preview__messages card">
+                      <div class="chat-preview__message">
+                        <div class="chat-preview__message-top">
+                          <span>Dmytro</span>
+                          <span>17:39</span>
+                        </div>
+                        <div class="chat-preview__message-text">Hello world!</div>
+                      </div>
+                    </div>
+
+                    <div class="chat-preview__composer card">
+                      <div class="chat-preview__textarea">Write a message</div>
+                      <div class="chat-preview__composer-footer">
+                        <span>Connected</span>
+                        <div class="chat-preview__button">Send</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class="project__content">
                 <h3 class="project__title" data-i18n="projects.backend.title">
-                  Accounting App API
+                  Node Chat
                 </h3>
                 <p class="project__text" data-i18n="projects.backend.description">
-                  Backend-only проєкт: розробив і задеплоїв REST API для обліку витрат з CRUD для користувачів і витрат, фільтрацією за датою та категоріями, Prisma-міграціями та PostgreSQL. Код, структура API і логіка доступні на GitHub, а live endpoint показує JSON-відповідь сервера.
+                  Node Chat — це вебзастосунок для обміну повідомленнями в реальному часі. Користувач може задати ім'я, створювати кімнати, перемикатися між ними, перейменовувати або видаляти їх і миттєво надсилати повідомлення в межах вибраної кімнати.
                 </p>
 
                 <div class="project__stack">
+                  <span class="tag">JavaScript</span>
                   <span class="tag">Node.js</span>
                   <span class="tag">Express</span>
-                  <span class="tag">Prisma</span>
-                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Socket.IO</span>
                   <span class="tag">Render</span>
                 </div>
 
                 <div class="project__actions">
                   <a
                     class="btn btn--primary"
-                    href="https://github.com/ProKesha/node_accounting-app-prisma"
+                    href="https://github.com/ProKesha/node-chat-portfolio"
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="projects.backend.repo"
@@ -159,12 +209,12 @@
                   </a>
                   <a
                     class="btn btn--secondary"
-                    href="https://node-accounting-app-prisma.onrender.com/users"
+                    href="https://node-chat-portfolio.onrender.com"
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="projects.backend.demo"
                   >
-                    Відкрити API (/users)
+                    Відкрити чат
                   </a>
                 </div>
               </div>
