@@ -1,24 +1,29 @@
 const translations = {
   uk: {
-    title: "Дмитро Попов | Front-End розробник",
+    title: "Дмитро Попов | Full Stack Developer",
     "nav.projects": "Проєкти",
     "nav.skills": "Навички",
     "nav.about": "Про мене",
     "nav.contact": "Контакти",
-    "hero.eyebrow": "Front-End розробник",
-    "hero.title": "Створюю сучасні та адаптивні вебінтерфейси",
-    "hero.description":
-      "Розробляю зручні вебзастосунки на React, TypeScript і JavaScript. Орієнтуюся на чистий код, адаптивну верстку та комфортний користувацький досвід.",
+    "hero.title": "Full Stack Developer",
     "hero.cta": "Переглянути проєкти",
     "hero.avatarAlt": "Dmytro Popov",
     "hero.cardText":
-      "Junior Front-End розробник із сильним фокусом на практичних проєктах, адаптивних інтерфейсах та інтерактивному UI.",
+      "Full Stack Developer з практичним досвідом у JavaScript, TypeScript, React, Angular, Node.js та адаптивних вебінтерфейсах.",
     "skills.title": "Технології",
     "skills.subtitle":
       "Основні технології та інструменти, які я використовую для створення сучасних вебзастосунків.",
     "projects.title": "Вибрані проєкти",
     "projects.subtitle":
-      "Кілька проєктів, які демонструють мій досвід в адаптивній верстці, JavaScript-логіці та React-застосунках.",
+      "Проєкти, які демонструють досвід у комерційній розробці, WordPress, React/Angular/Next.js, Node.js, REST API та запуску вебрішень.",
+    "projects.obsttechnik.label": "Commercial Website",
+    "projects.obsttechnik.visualTitle": "Obsttechnik",
+    "projects.obsttechnik.visualText":
+      "WordPress-сайт для компанії у сфері садової техніки та обладнання для переробки.",
+    "projects.obsttechnik.title": "Obsttechnik Website",
+    "projects.obsttechnik.description":
+      "Комерційний багатомовний сайт компанії Obsttechnik на WordPress. Працював над реалізацією сайту, адаптивними сторінками, контентними блоками, frontend-поведінкою, підтримкою існуючих секцій і покращенням користувацького досвіду.",
+    "projects.obsttechnik.demo": "Відкрити сайт",
     "projects.backend.label": "Real-time App",
     "projects.backend.visualTitle": "Node Chat",
     "projects.backend.visualText":
@@ -47,38 +52,43 @@ const translations = {
     "common.liveDemo": "Демо",
     "about.title": "Про мене",
     "about.description":
-      "Я Front-End Developer, який зосереджений на створенні практичних і добре структурованих вебпроєктів. Мені подобається розробляти адаптивні інтерфейси, працювати з компонентами та покращувати користувацький досвід.",
+      "Я Full Stack Developer, який зосереджений на створенні практичних і добре структурованих вебпроєктів. Працюю з React, Angular, Next.js, Node.js, REST API, адаптивними інтерфейсами та покращенням користувацького досвіду.",
     "about.helpTitle": "Чим я можу допомогти",
-    "about.help.1": "Адаптивна верстка сайтів",
-    "about.help.2": "Розробка лендінгів",
-    "about.help.3": "Реалізація інтерфейсів на React",
-    "about.help.4": "Інтерактивний функціонал на JavaScript",
-    "about.help.5": "Виправлення багів і покращення фронтенду",
+    "about.help.1": "Розробка вебпроєктів під ключ: структура, інтерфейс, інтеграції, запуск",
+    "about.help.2": "Frontend на React, Angular, Next.js, TypeScript",
+    "about.help.3": "Node.js-логіка, REST API інтеграції та серверна частина вебзастосунків",
+    "about.help.4": "WordPress-сайти, контентні сторінки та підтримка існуючих проєктів",
+    "about.help.5": "Адаптивність, UX-покращення, багфікси та технічна підтримка",
     "contact.title": "Контакти",
     "contact.description":
-      "Відкритий до фриланс-проєктів, фронтенд-завдань і співпраці. Зв'язатися зі мною можна через Telegram, LinkedIn, GitHub або Freelancehunt.",
-    "footer.copy": "© 2026 Дмитро Попов — Front-End розробник",
+      "Відкритий до full-stack, frontend і WordPress-проєктів, комерційної співпраці, запуску нових сайтів та підтримки існуючих вебрішень.",
+    "footer.copy": "© 2026 Дмитро Попов — Full Stack Developer",
   },
   en: {
-    title: "Dmytro Popov | Front-End Developer",
+    title: "Dmytro Popov | Full Stack Developer",
     "nav.projects": "Projects",
     "nav.skills": "Skills",
     "nav.about": "About",
     "nav.contact": "Contact",
-    "hero.eyebrow": "Front-End Developer",
-    "hero.title": "Building modern and responsive web interfaces",
-    "hero.description":
-      "I create user-friendly web applications with React, TypeScript and JavaScript. Focused on clean code, adaptive layout and convenient user experience.",
+    "hero.title": "Full Stack Developer",
     "hero.cta": "View Projects",
     "hero.avatarAlt": "Dmytro Popov",
     "hero.cardText":
-      "Junior Front-End Developer with a strong focus on practical projects, responsive interfaces and interactive UI.",
+      "Full Stack Developer with hands-on experience in JavaScript, TypeScript, React, Angular, Node.js, and responsive web interfaces.",
     "skills.title": "Tech Stack",
     "skills.subtitle":
       "Core technologies and tools I use to build modern web applications.",
     "projects.title": "Selected Projects",
     "projects.subtitle":
-      "A few projects that demonstrate my experience with responsive layouts, JavaScript logic and React applications.",
+      "Projects that demonstrate experience in commercial development, WordPress, React/Angular/Next.js, Node.js, REST APIs, and web solution delivery.",
+    "projects.obsttechnik.label": "Commercial Website",
+    "projects.obsttechnik.visualTitle": "Obsttechnik",
+    "projects.obsttechnik.visualText":
+      "WordPress website for a company in agricultural machinery and fruit processing equipment.",
+    "projects.obsttechnik.title": "Obsttechnik Website",
+    "projects.obsttechnik.description":
+      "Commercial multilingual WordPress website for Obsttechnik. Worked on website delivery, responsive pages, content-driven blocks, frontend behavior, existing section maintenance, and user experience improvements.",
+    "projects.obsttechnik.demo": "Open Website",
     "projects.backend.label": "Real-time App",
     "projects.backend.visualTitle": "Node Chat",
     "projects.backend.visualText":
@@ -107,17 +117,17 @@ const translations = {
     "common.liveDemo": "Live Demo",
     "about.title": "About Me",
     "about.description":
-      "I am a Front-End Developer focused on creating practical, well-structured web projects. I enjoy building responsive interfaces, working with components and improving user experience.",
+      "I am a Full Stack Developer focused on creating practical, well-structured web projects. I work with React, Angular, Next.js, Node.js, REST APIs, responsive interfaces, and user experience improvements.",
     "about.helpTitle": "What I Can Help With",
-    "about.help.1": "Responsive website layout",
-    "about.help.2": "Landing page development",
-    "about.help.3": "React UI implementation",
-    "about.help.4": "Interactive JavaScript functionality",
-    "about.help.5": "Frontend bug fixing and improvements",
+    "about.help.1": "End-to-end web project development: structure, UI, integrations, launch",
+    "about.help.2": "Frontend with React, Angular, Next.js, and TypeScript",
+    "about.help.3": "Node.js logic, REST API integrations, and server-side logic",
+    "about.help.4": "WordPress websites, content-driven pages, and existing project support",
+    "about.help.5": "Responsive UI, UX improvements, bug fixing, and technical support",
     "contact.title": "Contact",
     "contact.description":
-      "Open to freelance projects, frontend tasks and collaboration. Feel free to contact me through Telegram, LinkedIn, GitHub or Freelancehunt.",
-    "footer.copy": "© 2026 Dmytro Popov — Front-End Developer",
+      "Open to full-stack, frontend, and WordPress projects, commercial collaboration, new website launches, and support for existing web solutions.",
+    "footer.copy": "© 2026 Dmytro Popov — Full Stack Developer",
   },
 };
 

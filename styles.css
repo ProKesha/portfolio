@@ -140,25 +140,21 @@ a {
   align-items: center;
 }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: rgba(56, 189, 248, 0.12);
-  color: var(--accent);
-  font-weight: 700;
-  margin-bottom: 20px;
+.hero__grid > div:first-child {
+  display: grid;
+  align-content: center;
+  gap: 30px;
 }
 
 .hero h1 {
-  font-size: clamp(42px, 7vw, 72px);
-  line-height: 1.04;
-  margin-bottom: 20px;
+  position: relative;
+  max-width: 720px;
+  font-size: clamp(56px, 8vw, 104px);
+  line-height: 0.94;
+  letter-spacing: -0.02em;
 }
 
-.hero p {
+.hero__grid > div:first-child > p {
   font-size: 19px;
   color: var(--muted);
   max-width: 640px;
@@ -224,12 +220,16 @@ a {
 }
 
 .hero-card__title {
-  font-size: 22px;
-  margin-bottom: 8px;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.18;
+  margin-bottom: 14px;
 }
 
 .hero-card__text {
   color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+  margin-bottom: 0;
 }
 
 .skills {
@@ -472,6 +472,19 @@ a {
   object-fit: cover;
 }
 
+.obsttechnik-preview {
+  display: block;
+  min-height: 100%;
+  background: #ffffff;
+}
+
+.obsttechnik-preview__screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
 .project__content {
   display: flex;
   flex-direction: column;
@@ -660,6 +673,10 @@ a {
 
   .hero {
     padding-top: 40px;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 18vw, 72px);
   }
 
   .section {
