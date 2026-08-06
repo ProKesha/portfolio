@@ -103,6 +103,167 @@
           <div class="projects">
             <article class="project">
               <div class="project__image">
+                <div class="ops-preview ops-preview--domains" aria-hidden="true">
+                  <div class="ops-preview__topbar">
+                    <div>
+                      <span class="ops-preview__eyebrow">DOMAIN OPERATIONS</span>
+                      <strong>Domain Tool</strong>
+                    </div>
+                    <span class="ops-preview__status">API connected</span>
+                  </div>
+
+                  <div class="ops-preview__stats">
+                    <div><small>Domains</small><strong>200</strong></div>
+                    <div><small>Providers</small><strong>2</strong></div>
+                    <div><small>Jobs</small><strong>12</strong></div>
+                  </div>
+
+                  <div class="ops-preview__panel">
+                    <div class="ops-preview__panel-title">
+                      <strong>Domain inventory</strong>
+                      <span>Bulk actions</span>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-ready"></span>
+                      <strong>atlas.example</strong>
+                      <span>Cloudflare</span>
+                      <em>Ready</em>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-running"></span>
+                      <strong>north.example</strong>
+                      <span>Namecheap</span>
+                      <em>Running</em>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-ready"></span>
+                      <strong>status.example</strong>
+                      <span>Cloudflare</span>
+                      <em>Ready</em>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__content">
+                <h3 class="project__title" data-i18n="projects.domainTool.title">
+                  Domain Tool
+                </h3>
+                <p
+                  class="project__text"
+                  data-i18n="projects.domainTool.description"
+                >
+                  Full-stack панель для централізованого керування доменами в
+                  Namecheap і Cloudflare. Реалізував NestJS API, зашифроване
+                  зберігання credentials, PostgreSQL-схему та чергу масових
+                  операцій на Redis/BullMQ.
+                </p>
+
+                <div class="project__stack">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">NestJS</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Redis</span>
+                  <span class="tag">BullMQ</span>
+                </div>
+
+                <div class="project__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://github.com/ProKesha/domain-tool"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__image">
+                <div class="ops-preview ops-preview--servers" aria-hidden="true">
+                  <div class="ops-preview__topbar">
+                    <div>
+                      <span class="ops-preview__eyebrow">INFRASTRUCTURE</span>
+                      <strong>Northstar</strong>
+                    </div>
+                    <span class="ops-preview__status">Protected</span>
+                  </div>
+
+                  <div class="ops-preview__stats">
+                    <div><small>Servers</small><strong>50</strong></div>
+                    <div><small>Users</small><strong>30</strong></div>
+                    <div><small>Audit</small><strong>On</strong></div>
+                  </div>
+
+                  <div class="ops-preview__panel">
+                    <div class="ops-preview__panel-title">
+                      <strong>Server inventory</strong>
+                      <span>RBAC enabled</span>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-ready"></span>
+                      <strong>Orbit North</strong>
+                      <span>Hestia</span>
+                      <em>Online</em>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-warning"></span>
+                      <strong>Cedar Edge</strong>
+                      <span>SSH</span>
+                      <em>Review</em>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-ready"></span>
+                      <strong>Pulse Stage</strong>
+                      <span>Hestia</span>
+                      <em>Online</em>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__content">
+                <h3
+                  class="project__title"
+                  data-i18n="projects.serverControl.title"
+                >
+                  Northstar Server Control
+                </h3>
+                <p
+                  class="project__text"
+                  data-i18n="projects.serverControl.description"
+                >
+                  Full-stack платформа для інвентаризації серверів, login/RBAC,
+                  audit log і безпечного підключення Hestia. Дані зберігаються
+                  в PostgreSQL, а SSH та Hestia secrets шифруються й ніколи не
+                  повертаються через API.
+                </p>
+
+                <div class="project__stack">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">NestJS</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">RBAC</span>
+                  <span class="tag">Hestia API</span>
+                </div>
+
+                <div class="project__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://github.com/ProKesha/server-control"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__image">
                 <div class="obsttechnik-preview" aria-hidden="true">
                   <img
                     class="obsttechnik-preview__screenshot"

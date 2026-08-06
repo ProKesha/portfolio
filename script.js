@@ -16,6 +16,12 @@ const translations = {
     "projects.title": "Вибрані проєкти",
     "projects.subtitle":
       "Проєкти, які демонструють досвід у комерційній розробці, WordPress, React/Angular/Next.js, Node.js, REST API та запуску вебрішень.",
+    "projects.domainTool.title": "Domain Tool",
+    "projects.domainTool.description":
+      "Full-stack панель для централізованого керування доменами в Namecheap і Cloudflare. Реалізував NestJS API, зашифроване зберігання credentials, PostgreSQL-схему та чергу масових операцій на Redis/BullMQ.",
+    "projects.serverControl.title": "Northstar Server Control",
+    "projects.serverControl.description":
+      "Full-stack платформа для інвентаризації серверів, login/RBAC, audit log і безпечного підключення Hestia. Дані зберігаються в PostgreSQL, а SSH та Hestia secrets шифруються й ніколи не повертаються через API.",
     "projects.obsttechnik.label": "Commercial Website",
     "projects.obsttechnik.visualTitle": "Obsttechnik",
     "projects.obsttechnik.visualText":
@@ -81,6 +87,12 @@ const translations = {
     "projects.title": "Selected Projects",
     "projects.subtitle":
       "Projects that demonstrate experience in commercial development, WordPress, React/Angular/Next.js, Node.js, REST APIs, and web solution delivery.",
+    "projects.domainTool.title": "Domain Tool",
+    "projects.domainTool.description":
+      "A full-stack dashboard for centralized domain management across Namecheap and Cloudflare. Built a NestJS API, encrypted credential storage, a PostgreSQL schema, and a Redis/BullMQ queue for bulk operations.",
+    "projects.serverControl.title": "Northstar Server Control",
+    "projects.serverControl.description":
+      "A full-stack platform for server inventory, login/RBAC, audit logging, and secure Hestia connections. Data is stored in PostgreSQL, while SSH and Hestia secrets are encrypted and never returned by the API.",
     "projects.obsttechnik.label": "Commercial Website",
     "projects.obsttechnik.visualTitle": "Obsttechnik",
     "projects.obsttechnik.visualText":
