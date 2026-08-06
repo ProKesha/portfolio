@@ -16,6 +16,10 @@ const translations = {
     "projects.title": "Вибрані проєкти",
     "projects.subtitle":
       "Проєкти, які демонструють досвід у комерційній розробці, WordPress, React/Angular/Next.js, Node.js, REST API та запуску вебрішень.",
+    "projects.plishka.alt": "Головна сторінка Plishka",
+    "projects.plishka.title": "Plishka — e‑commerce платформа",
+    "projects.plishka.description":
+      "Командний вебзастосунок для майстерні авторських виробів із дерева. Відповідав за frontend: інтеграцію зі Spring Boot REST API, авторизацію та особистий кабінет, каталог, обране, кошик, оформлення замовлень, відгуки й адміністративну панель. Налаштував адаптивний інтерфейс і розгортання на Railway.",
     "projects.domainTool.title": "Domain Tool",
     "projects.domainTool.description":
       "Full-stack панель для централізованого керування доменами в Namecheap і Cloudflare. Реалізував NestJS API, зашифроване зберігання credentials, PostgreSQL-схему та чергу масових операцій на Redis/BullMQ.",
@@ -87,6 +91,10 @@ const translations = {
     "projects.title": "Selected Projects",
     "projects.subtitle":
       "Projects that demonstrate experience in commercial development, WordPress, React/Angular/Next.js, Node.js, REST APIs, and web solution delivery.",
+    "projects.plishka.alt": "Plishka home page",
+    "projects.plishka.title": "Plishka — E‑commerce Platform",
+    "projects.plishka.description":
+      "A team-built web application for a handcrafted wood products workshop. Responsible for the frontend: Spring Boot REST API integration, authentication and account management, catalog, favorites, cart, checkout, reviews, and the admin dashboard. Implemented the responsive UI and deployed it to Railway.",
     "projects.domainTool.title": "Domain Tool",
     "projects.domainTool.description":
       "A full-stack dashboard for centralized domain management across Namecheap and Cloudflare. Built a NestJS API, encrypted credential storage, a PostgreSQL schema, and a Redis/BullMQ queue for bulk operations.",
