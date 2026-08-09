@@ -15,15 +15,11 @@ const translations = {
       "Основні технології та інструменти, які я використовую для створення сучасних вебзастосунків.",
     "projects.title": "Вибрані проєкти",
     "projects.subtitle":
-<<<<<<< HEAD
       "Проєкти, які демонструють досвід у full-stack і комерційній розробці, Next.js, Node.js, Python/FastAPI, локальному AI, REST API та WordPress.",
-=======
-      "Проєкти, які демонструють досвід у комерційній розробці, WordPress, React/Angular/Next.js, Node.js, REST API та запуску вебрішень.",
     "projects.plishka.alt": "Головна сторінка Plishka",
     "projects.plishka.title": "Plishka — e‑commerce платформа",
     "projects.plishka.description":
       "Командний вебзастосунок для майстерні авторських виробів із дерева. Відповідав за frontend: інтеграцію зі Spring Boot REST API, авторизацію та особистий кабінет, каталог, обране, кошик, оформлення замовлень, відгуки й адміністративну панель. Налаштував адаптивний інтерфейс і розгортання на Railway.",
->>>>>>> origin/main
     "projects.domainTool.title": "Domain Tool",
     "projects.domainTool.description":
       "Full-stack панель для централізованого керування доменами в Namecheap і Cloudflare. Реалізував NestJS API, зашифроване зберігання credentials, PostgreSQL-схему та чергу масових операцій на Redis/BullMQ.",
@@ -97,15 +93,11 @@ const translations = {
       "Core technologies and tools I use to build modern web applications.",
     "projects.title": "Selected Projects",
     "projects.subtitle":
-<<<<<<< HEAD
       "Projects demonstrating full-stack and commercial development with Next.js, Node.js, Python/FastAPI, local AI, REST APIs, and WordPress.",
-=======
-      "Projects that demonstrate experience in commercial development, WordPress, React/Angular/Next.js, Node.js, REST APIs, and web solution delivery.",
     "projects.plishka.alt": "Plishka home page",
     "projects.plishka.title": "Plishka — E‑commerce Platform",
     "projects.plishka.description":
       "A team-built web application for a handcrafted wood products workshop. Responsible for the frontend: Spring Boot REST API integration, authentication and account management, catalog, favorites, cart, checkout, reviews, and the admin dashboard. Implemented the responsive UI and deployed it to Railway.",
->>>>>>> origin/main
     "projects.domainTool.title": "Domain Tool",
     "projects.domainTool.description":
       "A full-stack dashboard for centralized domain management across Namecheap and Cloudflare. Built a NestJS API, encrypted credential storage, a PostgreSQL schema, and a Redis/BullMQ queue for bulk operations.",
