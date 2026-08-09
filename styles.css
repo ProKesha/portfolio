@@ -288,6 +288,11 @@ a {
   --ops-accent-soft: rgba(110, 231, 183, 0.14);
 }
 
+.ops-preview--meetings {
+  --ops-accent: #c084fc;
+  --ops-accent-soft: rgba(192, 132, 252, 0.14);
+}
+
 .ops-preview__topbar,
 .ops-preview__panel-title,
 .ops-preview__row {
