@@ -15,7 +15,7 @@ const translations = {
       "Основні технології та інструменти, які я використовую для створення сучасних вебзастосунків.",
     "projects.title": "Вибрані проєкти",
     "projects.subtitle":
-      "Проєкти, які демонструють досвід у комерційній розробці, WordPress, React/Angular/Next.js, Node.js, REST API та запуску вебрішень.",
+      "Проєкти, які демонструють досвід у full-stack і комерційній розробці, Next.js, Node.js, Python/FastAPI, локальному AI, REST API та WordPress.",
     "projects.plishka.alt": "Головна сторінка Plishka",
     "projects.plishka.title": "Plishka — e‑commerce платформа",
     "projects.plishka.description":
@@ -23,6 +23,9 @@ const translations = {
     "projects.domainTool.title": "Domain Tool",
     "projects.domainTool.description":
       "Full-stack панель для централізованого керування доменами в Namecheap і Cloudflare. Реалізував NestJS API, зашифроване зберігання credentials, PostgreSQL-схему та чергу масових операцій на Redis/BullMQ.",
+    "projects.meetingAssistant.title": "AI Meeting Assistant",
+    "projects.meetingAssistant.description":
+      "Локальний full-stack AI-застосунок, що перетворює аудіозаписи зустрічей на транскрипти, структуровані підсумки та задачі. Побудував FastAPI/Next.js pipeline, multilingual E5 embeddings, pgvector semantic search і grounded RAG із посиланнями на джерела.",
     "projects.serverControl.title": "Northstar Server Control",
     "projects.serverControl.description":
       "Full-stack платформа для інвентаризації серверів, login/RBAC, audit log і безпечного підключення Hestia. Дані зберігаються в PostgreSQL, а SSH та Hestia secrets шифруються й ніколи не повертаються через API.",
@@ -90,7 +93,7 @@ const translations = {
       "Core technologies and tools I use to build modern web applications.",
     "projects.title": "Selected Projects",
     "projects.subtitle":
-      "Projects that demonstrate experience in commercial development, WordPress, React/Angular/Next.js, Node.js, REST APIs, and web solution delivery.",
+      "Projects demonstrating full-stack and commercial development with Next.js, Node.js, Python/FastAPI, local AI, REST APIs, and WordPress.",
     "projects.plishka.alt": "Plishka home page",
     "projects.plishka.title": "Plishka — E‑commerce Platform",
     "projects.plishka.description":
@@ -98,6 +101,9 @@ const translations = {
     "projects.domainTool.title": "Domain Tool",
     "projects.domainTool.description":
       "A full-stack dashboard for centralized domain management across Namecheap and Cloudflare. Built a NestJS API, encrypted credential storage, a PostgreSQL schema, and a Redis/BullMQ queue for bulk operations.",
+    "projects.meetingAssistant.title": "AI Meeting Assistant",
+    "projects.meetingAssistant.description":
+      "A local full-stack AI application that turns meeting recordings into transcripts, structured summaries, and action items. Built a FastAPI/Next.js pipeline with multilingual E5 embeddings, pgvector semantic search, and source-grounded RAG.",
     "projects.serverControl.title": "Northstar Server Control",
     "projects.serverControl.description":
       "A full-stack platform for server inventory, login/RBAC, audit logging, and secure Hestia connections. Data is stored in PostgreSQL, while SSH and Hestia secrets are encrypted and never returned by the API.",

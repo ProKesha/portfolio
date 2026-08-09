@@ -96,8 +96,9 @@
             Вибрані проєкти
           </h2>
           <p class="section-subtitle" data-i18n="projects.subtitle">
-            Проєкти, які демонструють досвід у комерційній розробці, WordPress,
-            React/Angular/Next.js, Node.js, REST API та запуску вебрішень.
+            Проєкти, які демонструють досвід у full-stack і комерційній
+            розробці, Next.js, Node.js, Python/FastAPI, локальному AI, REST API
+            та WordPress.
           </p>
 
           <div class="projects">
@@ -235,6 +236,89 @@
                   <a
                     class="btn btn--secondary"
                     href="https://github.com/ProKesha/domain-tool"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__image">
+                <div class="ops-preview ops-preview--meetings" aria-hidden="true">
+                  <div class="ops-preview__topbar">
+                    <div>
+                      <span class="ops-preview__eyebrow">LOCAL AI WORKSPACE</span>
+                      <strong>AI Meetings</strong>
+                    </div>
+                    <span class="ops-preview__status">Grounded RAG</span>
+                  </div>
+
+                  <div class="ops-preview__stats">
+                    <div><small>Transcription</small><strong>Local</strong></div>
+                    <div><small>Embeddings</small><strong>384</strong></div>
+                    <div><small>Search</small><strong>Vector</strong></div>
+                  </div>
+
+                  <div class="ops-preview__panel">
+                    <div class="ops-preview__panel-title">
+                      <strong>Meeting intelligence</strong>
+                      <span>Source-grounded</span>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-ready"></span>
+                      <strong>Upload & process</strong>
+                      <span>faster-whisper</span>
+                      <em>Ready</em>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-running"></span>
+                      <strong>Ask your meetings</strong>
+                      <span>pgvector</span>
+                      <em>Grounded</em>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-ready"></span>
+                      <strong>Meeting history</strong>
+                      <span>PostgreSQL</span>
+                      <em>Stored</em>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__content">
+                <h3
+                  class="project__title"
+                  data-i18n="projects.meetingAssistant.title"
+                >
+                  AI Meeting Assistant
+                </h3>
+                <p
+                  class="project__text"
+                  data-i18n="projects.meetingAssistant.description"
+                >
+                  Локальний full-stack AI-застосунок, що перетворює аудіозаписи
+                  зустрічей на транскрипти, структуровані підсумки та задачі.
+                  Побудував FastAPI/Next.js pipeline, multilingual E5 embeddings,
+                  pgvector semantic search і grounded RAG із посиланнями на
+                  джерела.
+                </p>
+
+                <div class="project__stack">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">pgvector</span>
+                  <span class="tag">Local AI</span>
+                </div>
+
+                <div class="project__actions">
+                  <a
+                    class="btn btn--secondary"
+                    href="https://github.com/ProKesha/ai-meeting-assistant"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -797,6 +881,6 @@
       </div>
     </footer>
 
-    <script src="./script.js?v=2"></script>
+    <script src="./script.js?v=3"></script>
   </body>
 </html>
