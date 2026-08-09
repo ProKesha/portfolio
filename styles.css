@@ -637,6 +637,13 @@ a {
   border-radius: 0;
 }
 
+.project__screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
 .project__content {
   display: flex;
   flex-direction: column;
