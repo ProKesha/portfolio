@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Дмитро Попов | Full Stack Developer</title>
+    <title>Дмитро Попов | Full-Stack TypeScript Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Dmytro Popov, a Full-Stack TypeScript Developer building web applications, APIs and AI-powered tools with React, Next.js, Node.js and PostgreSQL."
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -29,39 +33,79 @@
     <main>
       <section class="hero" id="home">
         <div class="container hero__grid">
-          <div>
+          <div class="hero__content">
+            <p class="hero__name" data-i18n="hero.name">Дмитро Попов</p>
             <h1 data-i18n="hero.title">
-              Full Stack Developer
+              Full-Stack TypeScript Developer
             </h1>
 
+            <p class="hero__stack">
+              React <span aria-hidden="true">·</span> Next.js
+              <span aria-hidden="true">·</span> Node.js
+              <span aria-hidden="true">·</span> NestJS
+              <span aria-hidden="true">·</span> PostgreSQL
+            </p>
+
+            <p class="hero__description" data-i18n="hero.description">
+              Розробляю full-stack вебзастосунки, API та AI-рішення на
+              React/Next.js, Node.js/NestJS і PostgreSQL.
+            </p>
+
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#projects" data-i18n="hero.cta">
+              <a
+                class="btn btn--primary"
+                href="#projects"
+                data-i18n="hero.projectsCta"
+              >
                 Переглянути проєкти
               </a>
               <a
                 class="btn btn--secondary"
+                href="./assets/Dmytro-Popov-CV.pdf"
+                download="Dmytro-Popov-CV.pdf"
+                data-i18n="hero.cvCta"
+              >
+                Завантажити CV
+              </a>
+            </div>
+
+            <div
+              class="hero__socials"
+              aria-label="Професійні профілі"
+              data-i18n-aria-label="hero.socialsLabel"
+            >
+              <a
                 href="https://github.com/ProKesha"
                 target="_blank"
                 rel="noreferrer"
               >
                 GitHub
               </a>
+              <span aria-hidden="true">·</span>
+              <a
+                href="https://www.linkedin.com/in/dmytro-popov-14a35b325"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
 
-          <article class="hero-card">
-            <img
-              src="./images/avatar.jpg"
-              alt="Dmytro Popov"
-              data-i18n-alt="hero.avatarAlt"
-            />
-            <h2 class="hero-card__title">
-              JS/TS • React • Angular • Node.js
-            </h2>
-            <p class="hero-card__text" data-i18n="hero.cardText">
-              Full Stack Developer з практичним досвідом у JavaScript,
-              TypeScript, React, Angular, Node.js та адаптивних вебінтерфейсах.
+          <article class="hero-card" aria-labelledby="engineering-focus-title">
+            <p
+              class="hero-card__eyebrow"
+              id="engineering-focus-title"
+              data-i18n="hero.focusTitle"
+            >
+              FULL-STACK ENGINEERING
             </p>
+            <ul class="hero-card__list">
+              <li data-i18n="hero.focus.web">Вебзастосунки</li>
+              <li data-i18n="hero.focus.api">API та інтеграції</li>
+              <li data-i18n="hero.focus.backend">Backend-сервіси</li>
+              <li data-i18n="hero.focus.ai">AI-рішення</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -71,21 +115,53 @@
           <h2 class="section-title" data-i18n="skills.title">Технології</h2>
 
           <div class="skills">
-            <div class="skill">React</div>
-            <div class="skill">Angular</div>
-            <div class="skill">TypeScript</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">Next.js</div>
-            <div class="skill">WordPress</div>
-            <div class="skill">Express</div>
-            <div class="skill">Prisma</div>
-            <div class="skill">PostgreSQL</div>
-            <div class="skill">HTML5</div>
-            <div class="skill">CSS3</div>
-            <div class="skill">SCSS</div>
-            <div class="skill">REST API</div>
-            <div class="skill">Git</div>
+            <article class="skill-group">
+              <h3 data-i18n="skills.frontend">Frontend</h3>
+              <div class="skill-list">
+                <span class="skill skill--primary">TypeScript</span>
+                <span class="skill skill--primary">React</span>
+                <span class="skill skill--primary">Next.js</span>
+                <span class="skill">Angular</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">SCSS</span>
+              </div>
+            </article>
+
+            <article class="skill-group">
+              <h3 data-i18n="skills.backend">Backend</h3>
+              <div class="skill-list">
+                <span class="skill skill--primary">Node.js</span>
+                <span class="skill skill--primary">NestJS</span>
+                <span class="skill">Express</span>
+                <span class="skill">Python</span>
+                <span class="skill">FastAPI</span>
+              </div>
+            </article>
+
+            <article class="skill-group">
+              <h3 data-i18n="skills.data">Data</h3>
+              <div class="skill-list">
+                <span class="skill skill--primary">PostgreSQL</span>
+                <span class="skill">Prisma</span>
+                <span class="skill">pgvector</span>
+                <span class="skill">Redis</span>
+              </div>
+            </article>
+
+            <article class="skill-group">
+              <h3 data-i18n="skills.infrastructure">
+                Infrastructure &amp; Integration
+              </h3>
+              <div class="skill-list">
+                <span class="skill">Cloudflare</span>
+                <span class="skill">Railway</span>
+                <span class="skill">REST API</span>
+                <span class="skill">Git</span>
+                <span class="skill">WordPress</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -780,37 +856,76 @@
       <section class="section" id="about">
         <div class="container about">
           <article class="about-card">
-            <h3 data-i18n="about.title">Про мене</h3>
+            <h3 data-i18n="about.profileTitle">Професійний профіль</h3>
             <p data-i18n="about.description">
-              Я Full Stack Developer, який зосереджений на створенні практичних
-              і добре структурованих вебпроєктів. Працюю з React, Angular,
-              Next.js, Node.js, REST API, адаптивними інтерфейсами та
-              покращенням користувацького досвіду.
+              Комерційний досвід у frontend і backend розробці,
+              API-інтеграціях, автоматизації та розгортанні. Працюю з
+              вебпродуктами від адаптивних інтерфейсів та інтеграцій до
+              серверної логіки, баз даних і AI-рішень.
             </p>
+
+            <div class="about-stacks">
+              <div class="about-stack">
+                <h4 data-i18n="skills.frontend">Frontend</h4>
+                <p>React · Next.js · Angular · TypeScript</p>
+              </div>
+              <div class="about-stack">
+                <h4 data-i18n="skills.backend">Backend</h4>
+                <p>Node.js · NestJS · Express · Python · FastAPI</p>
+              </div>
+              <div class="about-stack">
+                <h4 data-i18n="skills.data">Data</h4>
+                <p>PostgreSQL · Prisma · pgvector · Redis</p>
+              </div>
+              <div class="about-stack">
+                <h4 data-i18n="about.infrastructure">Infrastructure</h4>
+                <p>Cloudflare · Railway · Git</p>
+              </div>
+              <div class="about-stack">
+                <h4>AI / Automation</h4>
+                <p>RAG · embeddings · pgvector · local LLMs</p>
+              </div>
+            </div>
           </article>
 
           <article class="about-card">
-            <h3 data-i18n="about.helpTitle">Чим я можу допомогти</h3>
-            <ul>
-              <li data-i18n="about.help.1">
-                Розробка вебпроєктів під ключ: структура, інтерфейс, інтеграції,
-                запуск
-              </li>
-              <li data-i18n="about.help.2">
-                Frontend на React, Angular, Next.js, TypeScript
-              </li>
-              <li data-i18n="about.help.3">
-                Node.js-логіка, REST API інтеграції та серверна частина
-                вебзастосунків
-              </li>
-              <li data-i18n="about.help.4">
-                WordPress-сайти, контентні сторінки та підтримка існуючих
-                проєктів
-              </li>
-              <li data-i18n="about.help.5">
-                Адаптивність, UX-покращення, багфікси та технічна підтримка
-              </li>
-            </ul>
+            <h3 data-i18n="about.highlightsTitle">Досвід</h3>
+            <div class="experience-list">
+              <section class="experience-item">
+                <h4 data-i18n="about.highlight.commercialTitle">
+                  Комерційна веброзробка
+                </h4>
+                <p data-i18n="about.highlight.commercialText">
+                  Комерційні сайти та вебзастосунки, адаптивні інтерфейси,
+                  підтримка та розробка нового функціоналу.
+                </p>
+              </section>
+              <section class="experience-item">
+                <h4 data-i18n="about.highlight.fullstackTitle">
+                  Full-Stack та API-інтеграції
+                </h4>
+                <p data-i18n="about.highlight.fullstackText">
+                  REST API, backend services, авторизація, бази даних та
+                  інтеграції зі сторонніми сервісами.
+                </p>
+              </section>
+              <section class="experience-item">
+                <h4 data-i18n="about.highlight.infrastructureTitle">
+                  Інфраструктура та автоматизація
+                </h4>
+                <p data-i18n="about.highlight.infrastructureText">
+                  Домени, DNS, Cloudflare, deployment-процеси, webhooks та
+                  автоматизація.
+                </p>
+              </section>
+              <section class="experience-item">
+                <h4 data-i18n="about.highlight.aiTitle">AI-застосунки</h4>
+                <p data-i18n="about.highlight.aiText">
+                  Транскрипція, структурований LLM-аналіз, embeddings, semantic
+                  search та RAG.
+                </p>
+              </section>
+            </div>
           </article>
         </div>
       </section>
@@ -877,7 +992,9 @@
 
     <footer class="footer">
       <div class="container">
-        <p data-i18n="footer.copy">© 2026 Дмитро Попов — Full Stack Developer</p>
+        <p data-i18n="footer.copy">
+          © 2026 Дмитро Попов — Full-Stack TypeScript Developer
+        </p>
       </div>
     </footer>
 

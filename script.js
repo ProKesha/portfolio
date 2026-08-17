@@ -1,18 +1,29 @@
 const translations = {
   uk: {
-    title: "Дмитро Попов | Full Stack Developer",
+    title: "Дмитро Попов | Full-Stack TypeScript Developer",
+    metaDescription:
+      "Портфоліо Дмитра Попова, Full-Stack TypeScript Developer, який створює вебзастосунки, API та AI-рішення на React, Next.js, Node.js і PostgreSQL.",
     "nav.projects": "Проєкти",
     "nav.skills": "Навички",
     "nav.about": "Про мене",
     "nav.contact": "Контакти",
-    "hero.title": "Full Stack Developer",
-    "hero.cta": "Переглянути проєкти",
-    "hero.avatarAlt": "Dmytro Popov",
-    "hero.cardText":
-      "Full Stack Developer з практичним досвідом у JavaScript, TypeScript, React, Angular, Node.js та адаптивних вебінтерфейсах.",
+    "hero.name": "Дмитро Попов",
+    "hero.title": "Full-Stack TypeScript Developer",
+    "hero.description":
+      "Розробляю full-stack вебзастосунки, API та AI-рішення на React/Next.js, Node.js/NestJS і PostgreSQL.",
+    "hero.projectsCta": "Переглянути проєкти",
+    "hero.cvCta": "Завантажити CV",
+    "hero.socialsLabel": "Професійні профілі",
+    "hero.focusTitle": "FULL-STACK ENGINEERING",
+    "hero.focus.web": "Вебзастосунки",
+    "hero.focus.api": "API та інтеграції",
+    "hero.focus.backend": "Backend-сервіси",
+    "hero.focus.ai": "AI-рішення",
     "skills.title": "Технології",
-    "skills.subtitle":
-      "Основні технології та інструменти, які я використовую для створення сучасних вебзастосунків.",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend",
+    "skills.data": "Data",
+    "skills.infrastructure": "Інфраструктура та інтеграції",
     "projects.title": "Вибрані проєкти",
     "projects.subtitle":
       "Проєкти, які демонструють досвід у full-stack і комерційній розробці, Next.js, Node.js, Python/FastAPI, локальному AI, REST API та WordPress.",
@@ -63,34 +74,53 @@ const translations = {
     "projects.nutrition.description":
       "Розробив сучасний адаптивний сайт для лікаря-нутріціолога з акцентом на чистий UI, довіру користувачів і оптимізацію конверсії. Налаштував CI/CD через GitHub і Cloudflare Pages, включно з підключенням власного домену.",
     "common.liveDemo": "Демо",
-    "about.title": "Про мене",
+    "about.profileTitle": "Професійний профіль",
     "about.description":
-      "Я Full Stack Developer, який зосереджений на створенні практичних і добре структурованих вебпроєктів. Працюю з React, Angular, Next.js, Node.js, REST API, адаптивними інтерфейсами та покращенням користувацького досвіду.",
-    "about.helpTitle": "Чим я можу допомогти",
-    "about.help.1": "Розробка вебпроєктів під ключ: структура, інтерфейс, інтеграції, запуск",
-    "about.help.2": "Frontend на React, Angular, Next.js, TypeScript",
-    "about.help.3": "Node.js-логіка, REST API інтеграції та серверна частина вебзастосунків",
-    "about.help.4": "WordPress-сайти, контентні сторінки та підтримка існуючих проєктів",
-    "about.help.5": "Адаптивність, UX-покращення, багфікси та технічна підтримка",
+      "Комерційний досвід у frontend і backend розробці, API-інтеграціях, автоматизації та розгортанні. Працюю з вебпродуктами від адаптивних інтерфейсів та інтеграцій до серверної логіки, баз даних і AI-рішень.",
+    "about.infrastructure": "Інфраструктура",
+    "about.highlightsTitle": "Досвід",
+    "about.highlight.commercialTitle": "Комерційна веброзробка",
+    "about.highlight.commercialText":
+      "Комерційні сайти та вебзастосунки, адаптивні інтерфейси, підтримка та розробка нового функціоналу.",
+    "about.highlight.fullstackTitle": "Full-Stack та API-інтеграції",
+    "about.highlight.fullstackText":
+      "REST API, backend services, авторизація, бази даних та інтеграції зі сторонніми сервісами.",
+    "about.highlight.infrastructureTitle": "Інфраструктура та автоматизація",
+    "about.highlight.infrastructureText":
+      "Домени, DNS, Cloudflare, deployment-процеси, webhooks та автоматизація.",
+    "about.highlight.aiTitle": "AI-застосунки",
+    "about.highlight.aiText":
+      "Транскрипція, структурований LLM-аналіз, embeddings, semantic search та RAG.",
     "contact.title": "Контакти",
     "contact.description":
       "Відкритий до full-stack, frontend і WordPress-проєктів, комерційної співпраці, запуску нових сайтів та підтримки існуючих вебрішень.",
-    "footer.copy": "© 2026 Дмитро Попов — Full Stack Developer",
+    "footer.copy": "© 2026 Дмитро Попов — Full-Stack TypeScript Developer",
   },
   en: {
-    title: "Dmytro Popov | Full Stack Developer",
+    title: "Dmytro Popov | Full-Stack TypeScript Developer",
+    metaDescription:
+      "Portfolio of Dmytro Popov, a Full-Stack TypeScript Developer building web applications, APIs and AI-powered tools with React, Next.js, Node.js and PostgreSQL.",
     "nav.projects": "Projects",
     "nav.skills": "Skills",
     "nav.about": "About",
     "nav.contact": "Contact",
-    "hero.title": "Full Stack Developer",
-    "hero.cta": "View Projects",
-    "hero.avatarAlt": "Dmytro Popov",
-    "hero.cardText":
-      "Full Stack Developer with hands-on experience in JavaScript, TypeScript, React, Angular, Node.js, and responsive web interfaces.",
+    "hero.name": "Dmytro Popov",
+    "hero.title": "Full-Stack TypeScript Developer",
+    "hero.description":
+      "I build full-stack web applications, APIs and AI-powered tools with React/Next.js, Node.js/NestJS and PostgreSQL.",
+    "hero.projectsCta": "View Projects",
+    "hero.cvCta": "Download CV",
+    "hero.socialsLabel": "Professional profiles",
+    "hero.focusTitle": "FULL-STACK ENGINEERING",
+    "hero.focus.web": "Web Applications",
+    "hero.focus.api": "APIs & Integrations",
+    "hero.focus.backend": "Backend Services",
+    "hero.focus.ai": "AI-powered Tools",
     "skills.title": "Tech Stack",
-    "skills.subtitle":
-      "Core technologies and tools I use to build modern web applications.",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend",
+    "skills.data": "Data",
+    "skills.infrastructure": "Infrastructure & Integration",
     "projects.title": "Selected Projects",
     "projects.subtitle":
       "Projects demonstrating full-stack and commercial development with Next.js, Node.js, Python/FastAPI, local AI, REST APIs, and WordPress.",
@@ -141,25 +171,35 @@ const translations = {
     "projects.nutrition.description":
       "Developed a modern responsive website for a doctor nutritionist. Focused on clean UI, user trust, and conversion optimization. Implemented a full deployment pipeline using GitHub and Cloudflare Pages, including custom domain setup and continuous delivery.",
     "common.liveDemo": "Live Demo",
-    "about.title": "About Me",
+    "about.profileTitle": "Engineering Profile",
     "about.description":
-      "I am a Full Stack Developer focused on creating practical, well-structured web projects. I work with React, Angular, Next.js, Node.js, REST APIs, responsive interfaces, and user experience improvements.",
-    "about.helpTitle": "What I Can Help With",
-    "about.help.1": "End-to-end web project development: structure, UI, integrations, launch",
-    "about.help.2": "Frontend with React, Angular, Next.js, and TypeScript",
-    "about.help.3": "Node.js logic, REST API integrations, and server-side logic",
-    "about.help.4": "WordPress websites, content-driven pages, and existing project support",
-    "about.help.5": "Responsive UI, UX improvements, bug fixing, and technical support",
+      "Commercial development experience across frontend, backend, API integrations, automation and deployment. I build web products from responsive interfaces and API integrations to backend services, databases and AI-powered workflows.",
+    "about.infrastructure": "Infrastructure",
+    "about.highlightsTitle": "Experience Highlights",
+    "about.highlight.commercialTitle": "Commercial Web Development",
+    "about.highlight.commercialText":
+      "Production websites and web applications, responsive interfaces, maintenance and feature development.",
+    "about.highlight.fullstackTitle": "Full-Stack & API Integrations",
+    "about.highlight.fullstackText":
+      "REST APIs, backend services, authentication, databases and third-party integrations.",
+    "about.highlight.infrastructureTitle": "Infrastructure & Automation",
+    "about.highlight.infrastructureText":
+      "Domains, DNS, Cloudflare, deployment workflows, webhooks and automation.",
+    "about.highlight.aiTitle": "AI Applications",
+    "about.highlight.aiText":
+      "Transcription, structured LLM analysis, embeddings, semantic search and RAG.",
     "contact.title": "Contact",
     "contact.description":
       "Open to full-stack, frontend, and WordPress projects, commercial collaboration, new website launches, and support for existing web solutions.",
-    "footer.copy": "© 2026 Dmytro Popov — Full Stack Developer",
+    "footer.copy": "© 2026 Dmytro Popov — Full-Stack TypeScript Developer",
   },
 };
 
 const textNodes = document.querySelectorAll("[data-i18n]");
 const altNodes = document.querySelectorAll("[data-i18n-alt]");
+const ariaLabelNodes = document.querySelectorAll("[data-i18n-aria-label]");
 const langButtons = document.querySelectorAll("[data-lang]");
+const metaDescription = document.querySelector('meta[name="description"]');
 const storageKey = "portfolio-language";
 
 function applyLanguage(language) {
@@ -167,6 +207,7 @@ function applyLanguage(language) {
 
   document.documentElement.lang = language;
   document.title = locale.title;
+  metaDescription?.setAttribute("content", locale.metaDescription);
 
   textNodes.forEach((node) => {
     const key = node.dataset.i18n;
@@ -184,8 +225,18 @@ function applyLanguage(language) {
     }
   });
 
+  ariaLabelNodes.forEach((node) => {
+    const key = node.dataset.i18nAriaLabel;
+
+    if (locale[key]) {
+      node.setAttribute("aria-label", locale[key]);
+    }
+  });
+
   langButtons.forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.lang === language);
+    const isActive = button.dataset.lang === language;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
   });
 
   localStorage.setItem(storageKey, language);
