@@ -1,16 +1,17 @@
+/** @type {Record<string, Record<string, string>>} */
 const translations = {
   uk: {
-    title: "Дмитро Попов | Full-Stack TypeScript Developer",
+    title: "Дмитро Попов | Full-Stack Developer",
     metaDescription:
-      "Портфоліо Дмитра Попова, Full-Stack TypeScript Developer, який створює вебзастосунки, API та AI-рішення на React, Next.js, Node.js і PostgreSQL.",
+      "Full-Stack Developer із комерційним досвідом у TypeScript, React, Next.js і Node.js. Розробляю backend-сервіси, API та власні AI-застосунки з Python і FastAPI.",
     "nav.projects": "Проєкти",
     "nav.skills": "Навички",
-    "nav.about": "Про мене",
+    "nav.about": "Досвід",
     "nav.contact": "Контакти",
     "hero.name": "Дмитро Попов",
-    "hero.title": "Full-Stack TypeScript Developer",
+    "hero.title": "Full-Stack Developer",
     "hero.description":
-      "Розробляю full-stack вебзастосунки, API та AI-рішення на React/Next.js, Node.js/NestJS і PostgreSQL.",
+      "Розробляю full-stack вебзастосунки, backend-сервіси, API та AI-powered інструменти.",
     "hero.projectsCta": "Переглянути проєкти",
     "hero.cvCta": "Завантажити CV",
     "hero.socialsLabel": "Професійні профілі",
@@ -24,9 +25,9 @@ const translations = {
     "skills.backend": "Backend",
     "skills.data": "Data",
     "skills.infrastructure": "Інфраструктура та інтеграції",
-    "projects.title": "Вибрані проєкти",
+    "projects.title": "Ключові проєкти",
     "projects.subtitle":
-      "Проєкти, які демонструють досвід у full-stack і комерційній розробці, Next.js, Node.js, Python/FastAPI, локальному AI, REST API та WordPress.",
+      "Власні проєкти з акцентом на backend-сервіси, API-інтеграції та роботу з локальним AI.",
     "projects.plishka.alt": "Головна сторінка Plishka",
     "projects.plishka.title": "Plishka — e‑commerce платформа",
     "projects.plishka.description":
@@ -36,7 +37,7 @@ const translations = {
       "Full-stack панель для централізованого керування доменами в Namecheap і Cloudflare. Реалізував NestJS API, зашифроване зберігання credentials, PostgreSQL-схему та чергу масових операцій на Redis/BullMQ.",
     "projects.meetingAssistant.title": "AI Meeting Assistant",
     "projects.meetingAssistant.description":
-      "Локальний full-stack AI-застосунок, що перетворює аудіозаписи зустрічей на транскрипти, структуровані підсумки та задачі. Побудував FastAPI/Next.js pipeline, multilingual E5 embeddings, pgvector semantic search і grounded RAG із посиланнями на джерела.",
+      "Власний full-stack AI-застосунок: завантаження аудіо → транскрипція через faster-whisper → обробка локальною LLM через Ollama → структуровані підсумки зустрічей, задачі та висновки. Використовую Next.js, Python і FastAPI, PostgreSQL/pgvector, embeddings, семантичний пошук та RAG із посиланнями на джерела.",
     "projects.serverControl.title": "Northstar Server Control",
     "projects.serverControl.description":
       "Full-stack платформа для інвентаризації серверів, login/RBAC, audit log і безпечного підключення Hestia. Дані зберігаються в PostgreSQL, а SSH та Hestia secrets шифруються й ніколи не повертаються через API.",
@@ -71,43 +72,64 @@ const translations = {
       "Інтерактивна браузерна гра з ігровою логікою на JavaScript, керуванням з клавіатури, підрахунком очок і динамічними оновленнями інтерфейсу.",
     "projects.nutrition.alt": "Сайт лікаря-нутріціолога Дарії Попової",
     "projects.nutrition.title": "Сайт лікаря-нутріціолога",
+    "projects.nutrition.source": "Приватний репозиторій",
     "projects.nutrition.description":
       "Розробив сучасний адаптивний сайт для лікаря-нутріціолога з акцентом на чистий UI, довіру користувачів і оптимізацію конверсії. Налаштував CI/CD через GitHub і Cloudflare Pages, включно з підключенням власного домену.",
     "common.liveDemo": "Демо",
-    "about.profileTitle": "Професійний профіль",
-    "about.description":
-      "Комерційний досвід у frontend і backend розробці, API-інтеграціях, автоматизації та розгортанні. Працюю з вебпродуктами від адаптивних інтерфейсів та інтеграцій до серверної логіки, баз даних і AI-рішень.",
-    "about.infrastructure": "Інфраструктура",
-    "about.highlightsTitle": "Досвід",
-    "about.highlight.commercialTitle": "Комерційна веброзробка",
-    "about.highlight.commercialText":
-      "Комерційні сайти та вебзастосунки, адаптивні інтерфейси, підтримка та розробка нового функціоналу.",
-    "about.highlight.fullstackTitle": "Full-Stack та API-інтеграції",
-    "about.highlight.fullstackText":
-      "REST API, backend services, авторизація, бази даних та інтеграції зі сторонніми сервісами.",
-    "about.highlight.infrastructureTitle": "Інфраструктура та автоматизація",
-    "about.highlight.infrastructureText":
-      "Домени, DNS, Cloudflare, deployment-процеси, webhooks та автоматизація.",
-    "about.highlight.aiTitle": "AI-застосунки",
-    "about.highlight.aiText":
-      "Транскрипція, структурований LLM-аналіз, embeddings, semantic search та RAG.",
     "contact.title": "Контакти",
     "contact.description":
-      "Відкритий до full-stack, frontend і WordPress-проєктів, комерційної співпраці, запуску нових сайтів та підтримки існуючих вебрішень.",
-    "footer.copy": "© 2026 Дмитро Попов — Full-Stack TypeScript Developer",
+      "Відкритий до позицій Full-Stack Developer, Backend Developer та інженерних ролей із фокусом на AI. Також цікавлять можливості у Defense Tech / MilTech.",
+    "footer.copy": "© 2026 Дмитро Попов — Full-Stack Developer",
+    "projects.other": "Інші проєкти",
+    "projects.earlier": "Ранні проєкти",
+    "projects.demoData": "Демонстраційне середовище · синтетичні дані",
+    "skills.direction": "Python / AI · активний напрям розвитку",
+    "skills.context":
+      "Мій основний комерційний стек — JavaScript, TypeScript, React, Next.js і Node.js. Активно вивчаю Python та використовую FastAPI у власних backend- і AI-проєктах.",
+    "experience.title": "Досвід роботи",
+    "contact.availability":
+      "Розглядаю віддалену роботу з командами по всьому світу, а також офісний або гібридний формат у Києві та Київській області. Гнучкий щодо графіка роботи та співпраці з командами в часових поясах Європи, США й Азії.",
+    "experience.nomads.dates": "Січень 2026 – серпень 2026",
+    "experience.nomads.summary":
+      "Працював над лендингами та технічними інтеграціями для проєктів performance-маркетингу.",
+    "experience.nomads.item0": "Створював і адаптував responsive-лендинги.",
+    "experience.nomads.item1":
+      "Інтегрував форми збору заявок із CRM-системами, сторонніми сервісами та REST API.",
+    "experience.nomads.item2":
+      "Налаштовував webhooks, postbacks, пікселі та відстеження конверсій.",
+    "experience.nomads.item3":
+      "Працював із Google Analytics, Google Tag Manager, Meta Pixel, Keitaro та Binom.",
+    "experience.nomads.item4":
+      "Керував доменами, DNS, хостингом, SSL і налаштуваннями Cloudflare.",
+    "experience.nomads.item5":
+      "Знаходив і усував проблеми інтеграцій між frontend, системами трекінгу та зовнішніми сервісами.",
+    "experience.obsttechnik.dates": "Серпень 2024 – листопад 2025",
+    "experience.obsttechnik.summary":
+      "Працював над вебзастосунками та комерційними вебпроєктами на JavaScript і TypeScript.",
+    "experience.obsttechnik.item0":
+      "Розробляв адаптивні інтерфейси та перевикористовувані компоненти на React і Angular.",
+    "experience.obsttechnik.item1":
+      "Реалізовував backend-функціональність на Node.js.",
+    "experience.obsttechnik.item2": "Інтегрував REST API та сторонні сервіси.",
+    "experience.obsttechnik.item3":
+      "Створював і підтримував сторінки WordPress та власну функціональність.",
+    "experience.obsttechnik.item4":
+      "Додавав нові можливості й удосконалював наявні відповідно до бізнес-вимог.",
+    "experience.obsttechnik.item5":
+      "Усував помилки у frontend і backend та підтримував наявні проєкти.",
   },
   en: {
-    title: "Dmytro Popov | Full-Stack TypeScript Developer",
+    title: "Dmytro Popov | Full-Stack Developer",
     metaDescription:
-      "Portfolio of Dmytro Popov, a Full-Stack TypeScript Developer building web applications, APIs and AI-powered tools with React, Next.js, Node.js and PostgreSQL.",
+      "Full-Stack Developer with commercial experience in TypeScript, React, Next.js and Node.js, building backend services, APIs and AI-powered applications with Python and FastAPI.",
     "nav.projects": "Projects",
     "nav.skills": "Skills",
-    "nav.about": "About",
+    "nav.about": "Experience",
     "nav.contact": "Contact",
     "hero.name": "Dmytro Popov",
-    "hero.title": "Full-Stack TypeScript Developer",
+    "hero.title": "Full-Stack Developer",
     "hero.description":
-      "I build full-stack web applications, APIs and AI-powered tools with React/Next.js, Node.js/NestJS and PostgreSQL.",
+      "Building full-stack web applications, backend services, APIs and AI-powered tools.",
     "hero.projectsCta": "View Projects",
     "hero.cvCta": "Download CV",
     "hero.socialsLabel": "Professional profiles",
@@ -121,9 +143,9 @@ const translations = {
     "skills.backend": "Backend",
     "skills.data": "Data",
     "skills.infrastructure": "Infrastructure & Integration",
-    "projects.title": "Selected Projects",
+    "projects.title": "Featured Projects",
     "projects.subtitle":
-      "Projects demonstrating full-stack and commercial development with Next.js, Node.js, Python/FastAPI, local AI, REST APIs, and WordPress.",
+      "Personal projects focused on backend services, API integrations and local AI workflows.",
     "projects.plishka.alt": "Plishka home page",
     "projects.plishka.title": "Plishka — E‑commerce Platform",
     "projects.plishka.description":
@@ -133,7 +155,7 @@ const translations = {
       "A full-stack dashboard for centralized domain management across Namecheap and Cloudflare. Built a NestJS API, encrypted credential storage, a PostgreSQL schema, and a Redis/BullMQ queue for bulk operations.",
     "projects.meetingAssistant.title": "AI Meeting Assistant",
     "projects.meetingAssistant.description":
-      "A local full-stack AI application that turns meeting recordings into transcripts, structured summaries, and action items. Built a FastAPI/Next.js pipeline with multilingual E5 embeddings, pgvector semantic search, and source-grounded RAG.",
+      "A personal full-stack AI application: audio upload → faster-whisper transcription → local LLM processing with Ollama → structured meeting summaries, tasks and insights. Built with Next.js, Python and FastAPI, PostgreSQL/pgvector, embeddings, semantic search and source-grounded RAG.",
     "projects.serverControl.title": "Northstar Server Control",
     "projects.serverControl.description":
       "A full-stack platform for server inventory, login/RBAC, audit logging, and secure Hestia connections. Data is stored in PostgreSQL, while SSH and Hestia secrets are encrypted and never returned by the API.",
@@ -168,42 +190,71 @@ const translations = {
       "Interactive browser game with JavaScript game logic, keyboard controls, score calculation and dynamic UI updates.",
     "projects.nutrition.alt": "Daria Popova doctor nutritionist website",
     "projects.nutrition.title": "Doctor-Nutritionist Website",
+    "projects.nutrition.source": "Private repository",
     "projects.nutrition.description":
       "Developed a modern responsive website for a doctor nutritionist. Focused on clean UI, user trust, and conversion optimization. Implemented a full deployment pipeline using GitHub and Cloudflare Pages, including custom domain setup and continuous delivery.",
     "common.liveDemo": "Live Demo",
-    "about.profileTitle": "Engineering Profile",
-    "about.description":
-      "Commercial development experience across frontend, backend, API integrations, automation and deployment. I build web products from responsive interfaces and API integrations to backend services, databases and AI-powered workflows.",
-    "about.infrastructure": "Infrastructure",
-    "about.highlightsTitle": "Experience Highlights",
-    "about.highlight.commercialTitle": "Commercial Web Development",
-    "about.highlight.commercialText":
-      "Production websites and web applications, responsive interfaces, maintenance and feature development.",
-    "about.highlight.fullstackTitle": "Full-Stack & API Integrations",
-    "about.highlight.fullstackText":
-      "REST APIs, backend services, authentication, databases and third-party integrations.",
-    "about.highlight.infrastructureTitle": "Infrastructure & Automation",
-    "about.highlight.infrastructureText":
-      "Domains, DNS, Cloudflare, deployment workflows, webhooks and automation.",
-    "about.highlight.aiTitle": "AI Applications",
-    "about.highlight.aiText":
-      "Transcription, structured LLM analysis, embeddings, semantic search and RAG.",
     "contact.title": "Contact",
     "contact.description":
-      "Open to full-stack, frontend, and WordPress projects, commercial collaboration, new website launches, and support for existing web solutions.",
-    "footer.copy": "© 2026 Dmytro Popov — Full-Stack TypeScript Developer",
+      "Open to Full-Stack, Backend and AI-oriented engineering roles. Also interested in Defense Tech / MilTech opportunities.",
+    "footer.copy": "© 2026 Dmytro Popov — Full-Stack Developer",
+    "projects.other": "Other Projects",
+    "projects.earlier": "Earlier Projects",
+    "projects.demoData": "Demo environment · synthetic data",
+    "skills.direction": "Python / AI · active development",
+    "skills.context":
+      "My commercial stack is JavaScript, TypeScript, React, Next.js and Node.js. I am actively learning Python and using FastAPI in personal backend and AI projects.",
+    "experience.title": "Experience",
+    "contact.availability":
+      "Available for remote opportunities worldwide and on-site/hybrid roles in Kyiv and Kyiv region. Flexible with working hours and comfortable collaborating across European, US and Asian time zones.",
+    "experience.nomads.dates": "Jan 2026 – Aug 2026",
+    "experience.nomads.summary":
+      "Worked on landing pages and technical integrations for performance marketing projects.",
+    "experience.nomads.item0": "Built and customized responsive landing pages.",
+    "experience.nomads.item1":
+      "Integrated lead forms with CRM systems, third-party services and REST APIs.",
+    "experience.nomads.item2":
+      "Configured webhooks, postbacks, tracking pixels and conversion tracking.",
+    "experience.nomads.item3":
+      "Worked with Google Analytics, Google Tag Manager, Meta Pixel, Keitaro and Binom.",
+    "experience.nomads.item4":
+      "Managed domains, DNS, hosting, SSL and Cloudflare configuration.",
+    "experience.nomads.item5":
+      "Investigated integration issues across frontend, tracking and external services.",
+    "experience.obsttechnik.dates": "Aug 2024 – Nov 2025",
+    "experience.obsttechnik.summary":
+      "Worked on web applications and commercial web projects using JavaScript and TypeScript.",
+    "experience.obsttechnik.item0":
+      "Developed responsive interfaces and reusable components with React and Angular.",
+    "experience.obsttechnik.item1":
+      "Worked on backend functionality using Node.js.",
+    "experience.obsttechnik.item2":
+      "Integrated REST APIs and third-party services.",
+    "experience.obsttechnik.item3":
+      "Developed and maintained WordPress pages and custom functionality.",
+    "experience.obsttechnik.item4":
+      "Implemented new features and improved existing functionality based on business requirements.",
+    "experience.obsttechnik.item5":
+      "Debugged frontend and backend issues and supported existing projects.",
   },
 };
 
+/** @type {NodeListOf<HTMLElement>} */
 const textNodes = document.querySelectorAll("[data-i18n]");
+/** @type {NodeListOf<HTMLImageElement>} */
 const altNodes = document.querySelectorAll("[data-i18n-alt]");
+/** @type {NodeListOf<HTMLElement>} */
 const ariaLabelNodes = document.querySelectorAll("[data-i18n-aria-label]");
+/** @type {NodeListOf<HTMLButtonElement>} */
 const langButtons = document.querySelectorAll("[data-lang]");
 const metaDescription = document.querySelector('meta[name="description"]');
 const storageKey = "portfolio-language";
 
+/** @param {string | undefined} language */
 function applyLanguage(language) {
-  const locale = translations[language] || translations.uk;
+  language =
+    language && Object.hasOwn(translations, language) ? language : "en";
+  const locale = translations[language];
 
   document.documentElement.lang = language;
   document.title = locale.title;
@@ -212,7 +263,7 @@ function applyLanguage(language) {
   textNodes.forEach((node) => {
     const key = node.dataset.i18n;
 
-    if (locale[key]) {
+    if (key && locale[key]) {
       node.textContent = locale[key];
     }
   });
@@ -220,7 +271,7 @@ function applyLanguage(language) {
   altNodes.forEach((node) => {
     const key = node.dataset.i18nAlt;
 
-    if (locale[key]) {
+    if (key && locale[key]) {
       node.alt = locale[key];
     }
   });
@@ -228,7 +279,7 @@ function applyLanguage(language) {
   ariaLabelNodes.forEach((node) => {
     const key = node.dataset.i18nAriaLabel;
 
-    if (locale[key]) {
+    if (key && locale[key]) {
       node.setAttribute("aria-label", locale[key]);
     }
   });
@@ -239,14 +290,20 @@ function applyLanguage(language) {
     button.setAttribute("aria-pressed", String(isActive));
   });
 
-  localStorage.setItem(storageKey, language);
+  try {
+    localStorage.setItem(storageKey, language);
+  } catch {
+    /* Storage may be disabled. */
+  }
 }
 
-const savedLanguage = localStorage.getItem(storageKey);
-const browserLanguage = navigator.language?.startsWith("uk") ? "uk" : "en";
-const initialLanguage = savedLanguage || browserLanguage;
-
-applyLanguage(initialLanguage);
+let savedLanguage;
+try {
+  savedLanguage = localStorage.getItem(storageKey);
+} catch {
+  /* Use English if storage is unavailable. */
+}
+applyLanguage(savedLanguage || "en");
 
 langButtons.forEach((button) => {
   button.addEventListener("click", () => {

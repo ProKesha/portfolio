@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Дмитро Попов | Full-Stack TypeScript Developer</title>
+    <title>Dmytro Popov | Full-Stack Developer</title>
     <meta
       name="description"
-      content="Portfolio of Dmytro Popov, a Full-Stack TypeScript Developer building web applications, APIs and AI-powered tools with React, Next.js, Node.js and PostgreSQL."
+      content="Full-Stack Developer with commercial experience in TypeScript, React, Next.js and Node.js, building backend services, APIs and AI-powered applications with Python and FastAPI."
     />
+    <link rel="icon" href="data:," />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -16,15 +17,24 @@
         <a class="logo" href="#home">Dmytro Popov</a>
         <div class="header__controls">
           <nav class="nav">
-            <a href="#projects" data-i18n="nav.projects">Проєкти</a>
-            <a href="#skills" data-i18n="nav.skills">Навички</a>
-            <a href="#about" data-i18n="nav.about">Про мене</a>
-            <a href="#contact" data-i18n="nav.contact">Контакти</a>
+            <a href="#projects" data-i18n="nav.projects">Projects</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#about" data-i18n="nav.about">Experience</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
           </nav>
 
           <div class="lang-switcher" aria-label="Language switcher">
-            <button class="is-active" type="button" data-lang="uk">UA</button>
-            <button type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="uk" aria-pressed="false">
+              UA
+            </button>
+            <button
+              class="is-active"
+              type="button"
+              data-lang="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
           </div>
         </div>
       </div>
@@ -34,21 +44,16 @@
       <section class="hero" id="home">
         <div class="container hero__grid">
           <div class="hero__content">
-            <p class="hero__name" data-i18n="hero.name">Дмитро Попов</p>
-            <h1 data-i18n="hero.title">
-              Full-Stack TypeScript Developer
-            </h1>
+            <p class="hero__name" data-i18n="hero.name">Dmytro Popov</p>
+            <h1 data-i18n="hero.title">Full-Stack Developer</h1>
 
             <p class="hero__stack">
-              React <span aria-hidden="true">·</span> Next.js
-              <span aria-hidden="true">·</span> Node.js
-              <span aria-hidden="true">·</span> NestJS
-              <span aria-hidden="true">·</span> PostgreSQL
+              TypeScript · React · Next.js · Node.js · Python · FastAPI
             </p>
 
             <p class="hero__description" data-i18n="hero.description">
-              Розробляю full-stack вебзастосунки, API та AI-рішення на
-              React/Next.js, Node.js/NestJS і PostgreSQL.
+              Building full-stack web applications, backend services, APIs and
+              AI-powered tools.
             </p>
 
             <div class="hero__actions">
@@ -56,22 +61,20 @@
                 class="btn btn--primary"
                 href="#projects"
                 data-i18n="hero.projectsCta"
+                >View Projects</a
               >
-                Переглянути проєкти
-              </a>
               <a
                 class="btn btn--secondary"
-                href="./assets/Dmytro-Popov-CV.pdf"
-                download="Dmytro-Popov-CV.pdf"
+                href="./assets/Dmytro_Popov_Full_Stack_Developer_CV.pdf"
+                download="Dmytro_Popov_Full_Stack_Developer_CV.pdf"
                 data-i18n="hero.cvCta"
+                >Download CV</a
               >
-                Завантажити CV
-              </a>
             </div>
 
             <div
               class="hero__socials"
-              aria-label="Професійні профілі"
+              aria-label="Professional profiles"
               data-i18n-aria-label="hero.socialsLabel"
             >
               <a
@@ -101,239 +104,45 @@
               FULL-STACK ENGINEERING
             </p>
             <ul class="hero-card__list">
-              <li data-i18n="hero.focus.web">Вебзастосунки</li>
-              <li data-i18n="hero.focus.api">API та інтеграції</li>
-              <li data-i18n="hero.focus.backend">Backend-сервіси</li>
-              <li data-i18n="hero.focus.ai">AI-рішення</li>
+              <li data-i18n="hero.focus.web">Web Applications</li>
+              <li data-i18n="hero.focus.api">APIs & Integrations</li>
+              <li data-i18n="hero.focus.backend">Backend Services</li>
+              <li data-i18n="hero.focus.ai">AI-powered Tools</li>
             </ul>
           </article>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <div class="container">
-          <h2 class="section-title" data-i18n="skills.title">Технології</h2>
-
-          <div class="skills">
-            <article class="skill-group">
-              <h3 data-i18n="skills.frontend">Frontend</h3>
-              <div class="skill-list">
-                <span class="skill skill--primary">TypeScript</span>
-                <span class="skill skill--primary">React</span>
-                <span class="skill skill--primary">Next.js</span>
-                <span class="skill">Angular</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">HTML5</span>
-                <span class="skill">CSS3</span>
-                <span class="skill">SCSS</span>
-              </div>
-            </article>
-
-            <article class="skill-group">
-              <h3 data-i18n="skills.backend">Backend</h3>
-              <div class="skill-list">
-                <span class="skill skill--primary">Node.js</span>
-                <span class="skill skill--primary">NestJS</span>
-                <span class="skill">Express</span>
-                <span class="skill">Python</span>
-                <span class="skill">FastAPI</span>
-              </div>
-            </article>
-
-            <article class="skill-group">
-              <h3 data-i18n="skills.data">Data</h3>
-              <div class="skill-list">
-                <span class="skill skill--primary">PostgreSQL</span>
-                <span class="skill">Prisma</span>
-                <span class="skill">pgvector</span>
-                <span class="skill">Redis</span>
-              </div>
-            </article>
-
-            <article class="skill-group">
-              <h3 data-i18n="skills.infrastructure">
-                Infrastructure &amp; Integration
-              </h3>
-              <div class="skill-list">
-                <span class="skill">Cloudflare</span>
-                <span class="skill">Railway</span>
-                <span class="skill">REST API</span>
-                <span class="skill">Git</span>
-                <span class="skill">WordPress</span>
-              </div>
-            </article>
-          </div>
         </div>
       </section>
 
       <section class="section" id="projects">
         <div class="container">
           <h2 class="section-title" data-i18n="projects.title">
-            Вибрані проєкти
+            Featured Projects
           </h2>
           <p class="section-subtitle" data-i18n="projects.subtitle">
-            Проєкти, які демонструють досвід у full-stack і комерційній
-            розробці, Next.js, Node.js, Python/FastAPI, локальному AI, REST API
-            та WordPress.
+            Personal projects focused on backend services, API integrations and
+            local AI workflows.
           </p>
-
           <div class="projects">
-            <article class="project">
+            <article class="project project--featured">
               <div class="project__image">
-                <img
-                  class="project__screenshot"
-                  src="./images/plishka-preview.jpg"
-                  alt="Головна сторінка Plishka"
-                  data-i18n-alt="projects.plishka.alt"
-                />
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title" data-i18n="projects.plishka.title">
-                  Plishka — e‑commerce платформа
-                </h3>
-                <p
-                  class="project__text"
-                  data-i18n="projects.plishka.description"
+                <div
+                  class="ops-preview ops-preview--meetings"
+                  aria-hidden="true"
                 >
-                  Командний вебзастосунок для майстерні авторських виробів із
-                  дерева. Відповідав за frontend: інтеграцію зі Spring Boot REST
-                  API, авторизацію та особистий кабінет, каталог, обране, кошик,
-                  оформлення замовлень, відгуки й адміністративну панель.
-                  Налаштував адаптивний інтерфейс і розгортання на Railway.
-                </p>
-
-                <div class="project__stack">
-                  <span class="tag">React</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Sass</span>
-                  <span class="tag">REST API</span>
-                  <span class="tag">Railway</span>
-                </div>
-
-                <div class="project__actions">
-                  <a
-                    class="btn btn--primary"
-                    href="https://plishka.up.railway.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                    data-i18n="common.liveDemo"
-                  >
-                    Демо
-                  </a>
-                  <a
-                    class="btn btn--secondary"
-                    href="https://github.com/plishka-org/frontend"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project__image">
-                <div class="ops-preview ops-preview--domains" aria-hidden="true">
                   <div class="ops-preview__topbar">
                     <div>
-                      <span class="ops-preview__eyebrow">DOMAIN OPERATIONS</span>
-                      <strong>Domain Tool</strong>
-                    </div>
-                    <span class="ops-preview__status">API connected</span>
-                  </div>
-
-                  <div class="ops-preview__stats">
-                    <div><small>Domains</small><strong>200</strong></div>
-                    <div><small>Providers</small><strong>2</strong></div>
-                    <div><small>Jobs</small><strong>12</strong></div>
-                  </div>
-
-                  <div class="ops-preview__panel">
-                    <div class="ops-preview__panel-title">
-                      <strong>Domain inventory</strong>
-                      <span>Bulk actions</span>
-                    </div>
-                    <div class="ops-preview__row">
-                      <span class="ops-preview__dot is-ready"></span>
-                      <strong>atlas.example</strong>
-                      <span>Cloudflare</span>
-                      <em>Ready</em>
-                    </div>
-                    <div class="ops-preview__row">
-                      <span class="ops-preview__dot is-running"></span>
-                      <strong>north.example</strong>
-                      <span>Namecheap</span>
-                      <em>Running</em>
-                    </div>
-                    <div class="ops-preview__row">
-                      <span class="ops-preview__dot is-ready"></span>
-                      <strong>status.example</strong>
-                      <span>Cloudflare</span>
-                      <em>Ready</em>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title" data-i18n="projects.domainTool.title">
-                  Domain Tool
-                </h3>
-                <p
-                  class="project__text"
-                  data-i18n="projects.domainTool.description"
-                >
-                  Full-stack панель для централізованого керування доменами в
-                  Namecheap і Cloudflare. Реалізував NestJS API, зашифроване
-                  зберігання credentials, PostgreSQL-схему та чергу масових
-                  операцій на Redis/BullMQ.
-                </p>
-
-                <div class="project__stack">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">NestJS</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">Redis</span>
-                  <span class="tag">BullMQ</span>
-                </div>
-
-                <div class="project__actions">
-                  <a
-                    class="btn btn--primary"
-                    href="https://domain-tool-control.lort20178.chatgpt.site"
-                    target="_blank"
-                    rel="noreferrer"
-                    data-i18n="common.liveDemo"
-                  >
-                    Живе демо
-                  </a>
-                  <a
-                    class="btn btn--secondary"
-                    href="https://github.com/ProKesha/domain-tool"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project__image">
-                <div class="ops-preview ops-preview--meetings" aria-hidden="true">
-                  <div class="ops-preview__topbar">
-                    <div>
-                      <span class="ops-preview__eyebrow">LOCAL AI WORKSPACE</span>
+                      <span class="ops-preview__eyebrow"
+                        >LOCAL AI WORKSPACE</span
+                      >
                       <strong>AI Meetings</strong>
                     </div>
                     <span class="ops-preview__status">Grounded RAG</span>
                   </div>
 
                   <div class="ops-preview__stats">
-                    <div><small>Transcription</small><strong>Local</strong></div>
+                    <div>
+                      <small>Transcription</small><strong>Local</strong>
+                    </div>
                     <div><small>Embeddings</small><strong>384</strong></div>
                     <div><small>Search</small><strong>Vector</strong></div>
                   </div>
@@ -376,14 +185,20 @@
                   class="project__text"
                   data-i18n="projects.meetingAssistant.description"
                 >
-                  Локальний full-stack AI-застосунок, що перетворює аудіозаписи
-                  зустрічей на транскрипти, структуровані підсумки та задачі.
-                  Побудував FastAPI/Next.js pipeline, multilingual E5 embeddings,
-                  pgvector semantic search і grounded RAG із посиланнями на
-                  джерела.
+                  A personal full-stack AI application: audio upload →
+                  faster-whisper transcription → local LLM processing with
+                  Ollama → structured meeting summaries, tasks and insights.
+                  Built with Next.js, Python and FastAPI, PostgreSQL/pgvector,
+                  embeddings, semantic search and source-grounded RAG.
                 </p>
 
                 <div class="project__stack">
+                  <span class="tag">Python</span
+                  ><span class="tag">Ollama / local LLM</span
+                  ><span class="tag">faster-whisper</span
+                  ><span class="tag">Embeddings</span
+                  ><span class="tag">Semantic search</span
+                  ><span class="tag">RAG</span>
                   <span class="tag">Next.js</span>
                   <span class="tag">FastAPI</span>
                   <span class="tag">PostgreSQL</span>
@@ -403,10 +218,115 @@
                 </div>
               </div>
             </article>
-
-            <article class="project">
+            <article class="project project--featured">
               <div class="project__image">
-                <div class="ops-preview ops-preview--servers" aria-hidden="true">
+                <p class="demo-label" data-i18n="projects.demoData">
+                  Demo environment · synthetic data
+                </p>
+                <div
+                  class="ops-preview ops-preview--domains"
+                  aria-hidden="true"
+                >
+                  <div class="ops-preview__topbar">
+                    <div>
+                      <span class="ops-preview__eyebrow"
+                        >DOMAIN OPERATIONS</span
+                      >
+                      <strong>Domain Tool</strong>
+                    </div>
+                    <span class="ops-preview__status">API connected</span>
+                  </div>
+
+                  <div class="ops-preview__stats">
+                    <div><small>Domains</small><strong>200</strong></div>
+                    <div><small>Providers</small><strong>2</strong></div>
+                    <div><small>Jobs</small><strong>12</strong></div>
+                  </div>
+
+                  <div class="ops-preview__panel">
+                    <div class="ops-preview__panel-title">
+                      <strong>Domain inventory</strong>
+                      <span>Bulk actions</span>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-ready"></span>
+                      <strong>atlas.example</strong>
+                      <span>Cloudflare</span>
+                      <em>Ready</em>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-running"></span>
+                      <strong>north.example</strong>
+                      <span>Namecheap</span>
+                      <em>Running</em>
+                    </div>
+                    <div class="ops-preview__row">
+                      <span class="ops-preview__dot is-ready"></span>
+                      <strong>status.example</strong>
+                      <span>Cloudflare</span>
+                      <em>Ready</em>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__content">
+                <h3
+                  class="project__title"
+                  data-i18n="projects.domainTool.title"
+                >
+                  Domain Tool
+                </h3>
+                <p
+                  class="project__text"
+                  data-i18n="projects.domainTool.description"
+                >
+                  A full-stack dashboard for centralized domain management
+                  across Namecheap and Cloudflare. Built a NestJS API, encrypted
+                  credential storage, a PostgreSQL schema, and a Redis/BullMQ
+                  queue for bulk operations.
+                </p>
+
+                <div class="project__stack">
+                  <span class="tag">TypeScript</span
+                  ><span class="tag">Cloudflare API</span
+                  ><span class="tag">Namecheap API</span>
+                  <span class="tag">Next.js</span>
+                  <span class="tag">NestJS</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Redis</span>
+                  <span class="tag">BullMQ</span>
+                </div>
+
+                <div class="project__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://domain-tool-control.lort20178.chatgpt.site"
+                    target="_blank"
+                    rel="noreferrer"
+                    data-i18n="common.liveDemo"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--secondary"
+                    href="https://github.com/ProKesha/domain-tool"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--featured">
+              <div class="project__image">
+                <p class="demo-label" data-i18n="projects.demoData">
+                  Demo environment · synthetic data
+                </p>
+                <div
+                  class="ops-preview ops-preview--servers"
+                  aria-hidden="true"
+                >
                   <div class="ops-preview__topbar">
                     <div>
                       <span class="ops-preview__eyebrow">INFRASTRUCTURE</span>
@@ -459,13 +379,15 @@
                   class="project__text"
                   data-i18n="projects.serverControl.description"
                 >
-                  Full-stack платформа для інвентаризації серверів, login/RBAC,
-                  audit log і безпечного підключення Hestia. Дані зберігаються
-                  в PostgreSQL, а SSH та Hestia secrets шифруються й ніколи не
-                  повертаються через API.
+                  A full-stack platform for server inventory, login/RBAC, audit
+                  logging, and secure Hestia connections. Data is stored in
+                  PostgreSQL, while SSH and Hestia secrets are encrypted and
+                  never returned by the API.
                 </p>
 
                 <div class="project__stack">
+                  <span class="tag">Authentication</span
+                  ><span class="tag">Audit logging</span>
                   <span class="tag">Next.js</span>
                   <span class="tag">NestJS</span>
                   <span class="tag">PostgreSQL</span>
@@ -480,9 +402,8 @@
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="common.liveDemo"
+                    >Live Demo</a
                   >
-                    Живе демо
-                  </a>
                   <a
                     class="btn btn--secondary"
                     href="https://github.com/ProKesha/server-control"
@@ -494,7 +415,68 @@
                 </div>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="other-projects">
+        <div class="container">
+          <h2 class="section-title" data-i18n="projects.other">
+            Other Projects
+          </h2>
+          <div class="projects">
+            <article class="project">
+              <div class="project__image">
+                <img
+                  class="project__screenshot"
+                  src="./images/plishka-preview.jpg"
+                  alt="Plishka home page"
+                  data-i18n-alt="projects.plishka.alt"
+                />
+              </div>
 
+              <div class="project__content">
+                <h3 class="project__title" data-i18n="projects.plishka.title">
+                  Plishka — E‑commerce Platform
+                </h3>
+                <p
+                  class="project__text"
+                  data-i18n="projects.plishka.description"
+                >
+                  A team-built web application for a handcrafted wood products
+                  workshop. Responsible for the frontend: Spring Boot REST API
+                  integration, authentication and account management, catalog,
+                  favorites, cart, checkout, reviews, and the admin dashboard.
+                  Implemented the responsive UI and deployed it to Railway.
+                </p>
+
+                <div class="project__stack">
+                  <span class="tag">React</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Sass</span>
+                  <span class="tag">REST API</span>
+                  <span class="tag">Railway</span>
+                </div>
+
+                <div class="project__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://plishka.up.railway.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    data-i18n="common.liveDemo"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--secondary"
+                    href="https://github.com/plishka-org/frontend"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
             <article class="project">
               <div class="project__image">
                 <div class="obsttechnik-preview" aria-hidden="true">
@@ -518,11 +500,10 @@
                   class="project__text"
                   data-i18n="projects.obsttechnik.description"
                 >
-                  Комерційний багатомовний сайт компанії Obsttechnik на
-                  WordPress. Працював над реалізацією сайту, адаптивними
-                  сторінками, контентними блоками, frontend-поведінкою,
-                  підтримкою існуючих секцій і покращенням користувацького
-                  досвіду.
+                  Commercial multilingual WordPress website for Obsttechnik.
+                  Worked on website delivery, responsive pages, content-driven
+                  blocks, frontend behavior, existing section maintenance, and
+                  user experience improvements.
                 </p>
 
                 <div class="project__stack">
@@ -540,13 +521,68 @@
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="projects.obsttechnik.demo"
+                    >Open Website</a
                   >
-                    Відкрити сайт
-                  </a>
                 </div>
               </div>
             </article>
+            <article class="project">
+              <div class="project__image">
+                <img
+                  src="./images/daria-popova-nutrition.jpg"
+                  alt="Daria Popova doctor nutritionist website"
+                  data-i18n-alt="projects.nutrition.alt"
+                />
+              </div>
 
+              <div class="project__content">
+                <h3 class="project__title" data-i18n="projects.nutrition.title">
+                  Doctor-Nutritionist Website
+                </h3>
+                <p
+                  class="project__text"
+                  data-i18n="projects.nutrition.description"
+                >
+                  Developed a modern responsive website for a doctor
+                  nutritionist. Focused on clean UI, user trust, and conversion
+                  optimization. Implemented a full deployment pipeline using
+                  GitHub and Cloudflare Pages, including custom domain setup and
+                  continuous delivery.
+                </p>
+
+                <div class="project__stack">
+                  <span class="tag">React</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Vite</span>
+                  <span class="tag">Tailwind CSS</span>
+                </div>
+
+                <div class="project__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://drdariapopova.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    data-i18n="common.liveDemo"
+                    >Live Demo</a
+                  >
+                  <span
+                    class="project__source-note"
+                    data-i18n="projects.nutrition.source"
+                    >Private repository</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section section--earlier" id="earlier-projects">
+        <div class="container">
+          <h2 class="section-title" data-i18n="projects.earlier">
+            Earlier Projects
+          </h2>
+          <div class="projects">
             <article class="project">
               <div class="project__image">
                 <div class="chat-preview" aria-hidden="true">
@@ -570,7 +606,9 @@
                     <div class="chat-preview__panel card">
                       <div class="chat-preview__rooms-title">Rooms</div>
                       <div class="chat-preview__input-row">
-                        <div class="chat-preview__input chat-preview__input--muted">
+                        <div
+                          class="chat-preview__input chat-preview__input--muted"
+                        >
                           New room
                         </div>
                         <div class="chat-preview__button">Create</div>
@@ -597,7 +635,9 @@
                           <span>Dmytro</span>
                           <span>17:39</span>
                         </div>
-                        <div class="chat-preview__message-text">Hello world!</div>
+                        <div class="chat-preview__message-text">
+                          Hello world!
+                        </div>
                       </div>
                     </div>
 
@@ -616,8 +656,14 @@
                 <h3 class="project__title" data-i18n="projects.backend.title">
                   Node Chat
                 </h3>
-                <p class="project__text" data-i18n="projects.backend.description">
-                  Node Chat — це вебзастосунок для обміну повідомленнями в реальному часі. Користувач може задати ім'я, створювати кімнати, перемикатися між ними, перейменовувати або видаляти їх і миттєво надсилати повідомлення в межах вибраної кімнати.
+                <p
+                  class="project__text"
+                  data-i18n="projects.backend.description"
+                >
+                  Node Chat is a real-time chat web application where users can
+                  set a username, create rooms, switch between them, rename or
+                  delete rooms, and instantly exchange messages inside the
+                  selected room.
                 </p>
 
                 <div class="project__stack">
@@ -635,93 +681,38 @@
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="projects.backend.repo"
+                    >GitHub</a
                   >
-                    GitHub
-                  </a>
                   <a
                     class="btn btn--secondary"
                     href="https://node-chat-portfolio.onrender.com"
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="projects.backend.demo"
+                    >Open Chat</a
                   >
-                    Відкрити чат
-                  </a>
                 </div>
               </div>
             </article>
-
-            <article class="project">
-              <div class="project__image">
-                <img
-                  src="./images/daria-popova-nutrition.jpg"
-                  alt="Сайт лікаря-нутріціолога Дарії Попової"
-                  data-i18n-alt="projects.nutrition.alt"
-                />
-              </div>
-
-              <div class="project__content">
-                <h3 class="project__title" data-i18n="projects.nutrition.title">
-                  Сайт лікаря-нутріціолога
-                </h3>
-                <p
-                  class="project__text"
-                  data-i18n="projects.nutrition.description"
-                >
-                  Розробив сучасний адаптивний сайт для лікаря-нутріціолога з
-                  акцентом на чистий UI, довіру користувачів і оптимізацію
-                  конверсії. Налаштував CI/CD через GitHub і Cloudflare Pages,
-                  включно з підключенням власного домену.
-                </p>
-
-                <div class="project__stack">
-                  <span class="tag">React</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Vite</span>
-                  <span class="tag">Tailwind CSS</span>
-                </div>
-
-                <div class="project__actions">
-                  <a
-                    class="btn btn--primary"
-                    href="https://drdariapopova.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    data-i18n="common.liveDemo"
-                  >
-                    Живе демо
-                  </a>
-                  <a
-                    class="btn btn--secondary"
-                    href="https://github.com/ProKesha/daria-popova-nutrition"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
             <article class="project">
               <div class="project__image">
                 <img
                   src="./images/react-phone-catalog.jpg"
-                  alt="Каталог телефонів на React"
+                  alt="React Phone Catalog"
                   data-i18n-alt="projects.catalog.alt"
                 />
               </div>
 
               <div class="project__content">
                 <h3 class="project__title" data-i18n="projects.catalog.title">
-                  Каталог телефонів на React
+                  React Phone Catalog
                 </h3>
                 <p
                   class="project__text"
                   data-i18n="projects.catalog.description"
                 >
-                  SPA-інтерфейс для e-commerce з каталогом товарів, сортуванням,
-                  фільтрацією, пагінацією та сторінкою деталей продукту.
+                  SPA e-commerce interface with product catalog, sorting,
+                  filtering, pagination and product details page.
                 </p>
 
                 <div class="project__stack">
@@ -738,9 +729,8 @@
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="common.liveDemo"
+                    >Live Demo</a
                   >
-                    Живе демо
-                  </a>
                   <a
                     class="btn btn--secondary"
                     href="https://github.com/ProKesha/phone-catalog-app"
@@ -752,26 +742,25 @@
                 </div>
               </div>
             </article>
-
             <article class="project">
               <div class="project__image">
                 <img
                   src="./images/landing-page.jpg"
-                  alt="Лендінг"
+                  alt="Landing Page"
                   data-i18n-alt="projects.landing.alt"
                 />
               </div>
 
               <div class="project__content">
                 <h3 class="project__title" data-i18n="projects.landing.title">
-                  Адаптивний лендінг
+                  Responsive Landing Page
                 </h3>
                 <p
                   class="project__text"
                   data-i18n="projects.landing.description"
                 >
-                  Сучасний адаптивний лендінг, зверстаний із дизайн-макета з
-                  чистою структурою та коректною поведінкою на різних екранах.
+                  Modern responsive landing page built from a design mockup with
+                  clean layout and adaptive behavior.
                 </p>
 
                 <div class="project__stack">
@@ -787,9 +776,8 @@
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="common.liveDemo"
+                    >Live Demo</a
                   >
-                    Живе демо
-                  </a>
                   <a
                     class="btn btn--secondary"
                     href="https://github.com/ProKesha/bike-store-landing"
@@ -801,24 +789,22 @@
                 </div>
               </div>
             </article>
-
             <article class="project">
               <div class="project__image">
                 <img
                   src="./images/js-2048-game.jpg"
-                  alt="Гра 2048 на JavaScript"
+                  alt="2048 JavaScript Game"
                   data-i18n-alt="projects.game.alt"
                 />
               </div>
 
               <div class="project__content">
                 <h3 class="project__title" data-i18n="projects.game.title">
-                  Гра 2048 на JavaScript
+                  2048 JavaScript Game
                 </h3>
                 <p class="project__text" data-i18n="projects.game.description">
-                  Інтерактивна браузерна гра з ігровою логікою на JavaScript,
-                  керуванням з клавіатури, підрахунком очок і динамічними
-                  оновленнями інтерфейсу.
+                  Interactive browser game with JavaScript game logic, keyboard
+                  controls, score calculation and dynamic UI updates.
                 </p>
 
                 <div class="project__stack">
@@ -834,9 +820,8 @@
                     target="_blank"
                     rel="noreferrer"
                     data-i18n="common.liveDemo"
+                    >Live Demo</a
                   >
-                    Живе демо
-                  </a>
                   <a
                     class="btn btn--secondary"
                     href="https://github.com/ProKesha/2048-Puzzle-Game"
@@ -848,100 +833,170 @@
                 </div>
               </div>
             </article>
-
           </div>
         </div>
       </section>
-
       <section class="section" id="about">
-        <div class="container about">
-          <article class="about-card">
-            <h3 data-i18n="about.profileTitle">Професійний профіль</h3>
-            <p data-i18n="about.description">
-              Комерційний досвід у frontend і backend розробці,
-              API-інтеграціях, автоматизації та розгортанні. Працюю з
-              вебпродуктами від адаптивних інтерфейсів та інтеграцій до
-              серверної логіки, баз даних і AI-рішень.
-            </p>
-
-            <div class="about-stacks">
-              <div class="about-stack">
-                <h4 data-i18n="skills.frontend">Frontend</h4>
-                <p>React · Next.js · Angular · TypeScript</p>
-              </div>
-              <div class="about-stack">
-                <h4 data-i18n="skills.backend">Backend</h4>
-                <p>Node.js · NestJS · Express · Python · FastAPI</p>
-              </div>
-              <div class="about-stack">
-                <h4 data-i18n="skills.data">Data</h4>
-                <p>PostgreSQL · Prisma · pgvector · Redis</p>
-              </div>
-              <div class="about-stack">
-                <h4 data-i18n="about.infrastructure">Infrastructure</h4>
-                <p>Cloudflare · Railway · Git</p>
-              </div>
-              <div class="about-stack">
-                <h4>AI / Automation</h4>
-                <p>RAG · embeddings · pgvector · local LLMs</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="about-card">
-            <h3 data-i18n="about.highlightsTitle">Досвід</h3>
-            <div class="experience-list">
-              <section class="experience-item">
-                <h4 data-i18n="about.highlight.commercialTitle">
-                  Комерційна веброзробка
-                </h4>
-                <p data-i18n="about.highlight.commercialText">
-                  Комерційні сайти та вебзастосунки, адаптивні інтерфейси,
-                  підтримка та розробка нового функціоналу.
-                </p>
-              </section>
-              <section class="experience-item">
-                <h4 data-i18n="about.highlight.fullstackTitle">
-                  Full-Stack та API-інтеграції
-                </h4>
-                <p data-i18n="about.highlight.fullstackText">
-                  REST API, backend services, авторизація, бази даних та
-                  інтеграції зі сторонніми сервісами.
-                </p>
-              </section>
-              <section class="experience-item">
-                <h4 data-i18n="about.highlight.infrastructureTitle">
-                  Інфраструктура та автоматизація
-                </h4>
-                <p data-i18n="about.highlight.infrastructureText">
-                  Домени, DNS, Cloudflare, deployment-процеси, webhooks та
-                  автоматизація.
-                </p>
-              </section>
-              <section class="experience-item">
-                <h4 data-i18n="about.highlight.aiTitle">AI-застосунки</h4>
-                <p data-i18n="about.highlight.aiText">
-                  Транскрипція, структурований LLM-аналіз, embeddings, semantic
-                  search та RAG.
-                </p>
-              </section>
-            </div>
-          </article>
+        <div class="container">
+          <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+          <div class="about">
+            <article class="about-card">
+              <h3>Digital NomAds</h3>
+              <h4>Technical Integrator / Frontend Developer</h4>
+              <p class="experience-dates" data-i18n="experience.nomads.dates">
+                Jan 2026 – Aug 2026
+              </p>
+              <p data-i18n="experience.nomads.summary">
+                Worked on landing pages and technical integrations for
+                performance marketing projects.
+              </p>
+              <ul class="experience-bullets">
+                <li data-i18n="experience.nomads.item0">
+                  Built and customized responsive landing pages.
+                </li>
+                <li data-i18n="experience.nomads.item1">
+                  Integrated lead forms with CRM systems, third-party services
+                  and REST APIs.
+                </li>
+                <li data-i18n="experience.nomads.item2">
+                  Configured webhooks, postbacks, tracking pixels and conversion
+                  tracking.
+                </li>
+                <li data-i18n="experience.nomads.item3">
+                  Worked with Google Analytics, Google Tag Manager, Meta Pixel,
+                  Keitaro and Binom.
+                </li>
+                <li data-i18n="experience.nomads.item4">
+                  Managed domains, DNS, hosting, SSL and Cloudflare
+                  configuration.
+                </li>
+                <li data-i18n="experience.nomads.item5">
+                  Investigated integration issues across frontend, tracking and
+                  external services.
+                </li>
+              </ul>
+              <p class="experience-tech">
+                JavaScript · HTML · CSS/SCSS · Node.js · PHP · WordPress · REST
+                APIs · Webhooks · Cloudflare · GA · GTM · Git
+              </p>
+            </article>
+            <article class="about-card">
+              <h3>LLC Obsttechnik Ukraine</h3>
+              <h4>Full-Stack Developer</h4>
+              <p
+                class="experience-dates"
+                data-i18n="experience.obsttechnik.dates"
+              >
+                Aug 2024 – Nov 2025
+              </p>
+              <p data-i18n="experience.obsttechnik.summary">
+                Worked on web applications and commercial web projects using
+                JavaScript and TypeScript.
+              </p>
+              <ul class="experience-bullets">
+                <li data-i18n="experience.obsttechnik.item0">
+                  Developed responsive interfaces and reusable components with
+                  React and Angular.
+                </li>
+                <li data-i18n="experience.obsttechnik.item1">
+                  Worked on backend functionality using Node.js.
+                </li>
+                <li data-i18n="experience.obsttechnik.item2">
+                  Integrated REST APIs and third-party services.
+                </li>
+                <li data-i18n="experience.obsttechnik.item3">
+                  Developed and maintained WordPress pages and custom
+                  functionality.
+                </li>
+                <li data-i18n="experience.obsttechnik.item4">
+                  Implemented new features and improved existing functionality
+                  based on business requirements.
+                </li>
+                <li data-i18n="experience.obsttechnik.item5">
+                  Debugged frontend and backend issues and supported existing
+                  projects.
+                </li>
+              </ul>
+              <p class="experience-tech">
+                JavaScript · TypeScript · React · Angular · Node.js · HTML ·
+                SCSS · WordPress · REST APIs · Git
+              </p>
+            </article>
+          </div>
         </div>
       </section>
-
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section-title" data-i18n="skills.title">Tech Stack</h2>
+          <p class="section-subtitle" data-i18n="skills.context">
+            My commercial stack is JavaScript, TypeScript, React, Next.js and
+            Node.js. I am actively learning Python and using FastAPI in personal
+            backend and AI projects.
+          </p>
+          <div class="skills">
+            <article class="skill-group">
+              <h3 data-i18n="skills.frontend">Frontend</h3>
+              <div class="skill-list">
+                <span class="skill skill--primary">TypeScript</span
+                ><span class="skill skill--primary">JavaScript</span
+                ><span class="skill skill--primary">React</span
+                ><span class="skill skill--primary">Next.js</span
+                ><span class="skill">Angular</span>
+              </div>
+            </article>
+            <article class="skill-group">
+              <h3 data-i18n="skills.backend">Backend</h3>
+              <div class="skill-list">
+                <span class="skill skill--primary">Node.js</span
+                ><span class="skill skill--primary">NestJS</span
+                ><span class="skill skill--primary">PostgreSQL</span
+                ><span class="skill skill--primary">REST APIs</span
+                ><span class="skill">Express</span
+                ><span class="skill">Redis</span
+                ><span class="skill">Prisma</span>
+              </div>
+            </article>
+            <article class="skill-group">
+              <h3 data-i18n="skills.direction">
+                Python / AI · active development
+              </h3>
+              <div class="skill-list">
+                <span class="skill">Python</span
+                ><span class="skill">FastAPI</span
+                ><span class="skill">pgvector</span
+                ><span class="skill">Ollama</span
+                ><span class="skill">faster-whisper</span>
+              </div>
+            </article>
+            <article class="skill-group">
+              <h3 data-i18n="skills.infrastructure">
+                Infrastructure & Integration
+              </h3>
+              <div class="skill-list">
+                <span class="skill skill--primary">Git</span
+                ><span class="skill">WordPress</span
+                ><span class="skill">Cloudflare</span
+                ><span class="skill">Webhooks</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
       <section class="contact" id="contact">
         <div class="container">
           <div class="contact-box">
-            <h2 class="section-title" data-i18n="contact.title">
-              Контакти
-            </h2>
+            <h2 class="section-title" data-i18n="contact.title">Contact</h2>
             <p data-i18n="contact.description">
-              Відкритий до full-stack, frontend і WordPress-проєктів,
-              комерційної співпраці, запуску нових сайтів та підтримки існуючих
-              вебрішень.
+              Open to Full-Stack, Backend and AI-oriented engineering roles.
+              Also interested in Defense Tech / MilTech opportunities.
             </p>
 
+            <p data-i18n="contact.availability">
+              Available for remote opportunities worldwide and on-site/hybrid
+              roles in Kyiv and Kyiv region. Flexible with working hours and
+              comfortable collaborating across European, US and Asian time
+              zones.
+            </p>
             <div class="contact-links">
               <a
                 class="btn btn--secondary"
@@ -993,11 +1048,11 @@
     <footer class="footer">
       <div class="container">
         <p data-i18n="footer.copy">
-          © 2026 Дмитро Попов — Full-Stack TypeScript Developer
+          © 2026 Dmytro Popov — Full-Stack Developer
         </p>
       </div>
     </footer>
 
-    <script src="./script.js?v=3"></script>
+    <script src="./script.js?v=4"></script>
   </body>
 </html>
